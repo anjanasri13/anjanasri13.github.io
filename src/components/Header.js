@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../assets/img/img1.png";
 import User from "../assets/img/User.png";
 import { Link, NavLink } from "react-router-dom";
@@ -6,6 +6,8 @@ import "@fontsource/raleway";
 import "../assets/css/Home.css";
 
 export default function Header() {
+const [isActive, setIsActive] = useState(true);
+
   return (
     <div className="hidden items-center justify-between mt-[30px] md:flex">
       <div>
@@ -13,23 +15,22 @@ export default function Header() {
       </div>
       <div className="flex items-center justify-evenly text-[#333] text-[16px] font-medium capitalize Raleway w-4/5">
         <NavLink style={(({isActive})=>
-        {return isActive?{color:'red',textDecoration:'none'}:{color:'black',textDecoration:'none'}})} to="/">
+        {return isActive?{color:'grey',textDecoration:'none'}:{color:'black',textDecoration:'none'}})} to="/">
           Home
         </NavLink>
-        <NavLink style={(({isActive})=>
-        {return isActive?{color:'red',textDecoration:'none'}:{color:'black'}})} to="">
+        <NavLink style={{color: isActive ? 'grey' : "black",textDecoration: isActive ? "none" : 'underline' }} to="">
           Solutions
         </NavLink>
         <NavLink style={(({isActive})=>
-        {return isActive?{color:'red',textDecoration:'none'}:{color:'black'}})} to="">
+        {return isActive?{color:'grey',textDecoration:'none'}:{color:'black'}})} to="">
           About Us
         </NavLink>
         <NavLink style={(({isActive})=>
-        {return isActive?{color:'red',textDecoration:'none'}:{color:'black'}})}to="">
+        {return isActive?{color:'grey',textDecoration:'none'}:{color:'black'}})}to="">
           Pricing
         </NavLink>
         <NavLink style={(({isActive})=>
-        {return isActive?{color:'red',textDecoration:'none'}:{color:'black'}})} to="">
+        {return isActive?{color:'grey',textDecoration:'none'}:{color:'black'}})} to="">
           Contact Us
         </NavLink>
       </div>

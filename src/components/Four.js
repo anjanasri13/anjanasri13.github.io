@@ -3,6 +3,12 @@ import { FourStyled } from './FourStyles'
 
 export default function Four({children}) {
   return (
-    <FourStyled>{children}</FourStyled>
+    <p style={{ fontSize:" 18px",                           
+      fontWeight: 400,
+      textTransform:" capitalize",
+      opacity: 0.7,
+      marginLeft: "40px",
+      textAlign: 'center',
+      lineHeight: "30px"}}>{children}</p>
   )
 }

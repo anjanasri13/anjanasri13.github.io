@@ -93,8 +93,8 @@ export default function Home(){
       <div
         className="flex items-center justify-center md:justify-between mt-[50px] mb-[50px] ml-[35px]">
         <div>
-          <p className="text-[#1B1B1B] text-[42px] font-bold leading-[140%] captilize text-center min-sm:text-left">
-            Monitor and track Real-time 
+          <p className="text-[#1B1B1B] text-[42px] font-bold leading-[140%] captilize ">
+            Monitor and track Real-time<br/>
             online price insights.
           </p>
           <p className="text-[#1B1B1B] text-[16px] font-medium leading-[30px] captilize opacity-70">
@@ -107,7 +107,7 @@ export default function Home(){
         </div>
         <div>
           <img
-            src={rect} className="w-[639px] h-[405px] rounded-[12px] hidden md:flex"></img>
+            src={rect} className="w-[639px] h-[405px] rounded-[12px] "></img>
         </div>
       </div>
 
@@ -323,7 +323,7 @@ export default function Home(){
           <div className="w-[190px] h-[1px] ml-[60px] mt-[10px] bg-[#4444444D]"/>
           <p className="text-[#444] text-[24px] font-semibold capitalize ml-[110px]">Amazon</p>
           <Four>
-            Effortlessly track Amazon <br /> prices with accurate <br />
+            Effortlessly track Amazon <br/> prices with accurate <br />
             historical data.
           </Four>
           <button className="flex text-[#2699D8] text-[18px] font-semibold capitalize ml-[110px]">
