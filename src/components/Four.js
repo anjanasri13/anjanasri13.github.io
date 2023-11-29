@@ -10,5 +10,6 @@ export default function Four({children}) {
       marginLeft: "40px",
       textAlign: 'center',
       lineHeight: "30px"}}>{children}</p>
+      // <FourStyled>{children}</FourStyled>
   )
 }

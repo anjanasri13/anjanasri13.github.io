@@ -705,14 +705,14 @@ export default function Home(){
               dignissim maecenas nec at nulla.
             </p>
             <div className="flex">
-              <img className="w-[20px] h-[19px] mt-[20px] ml-[20px]"
+              <img className="w-[40px] h-[40px] rounded-[40px] mt-[5px] ml-[20px]"
                 src={ellipse2}/>
               &emsp;
               <p className="text-[16px] text-[#444] mt-[3px] font-semibold">
                 Sara
               </p>
             </div>
-            <p className="text-[14px] text-[#444] font-medium ml-[59px] mt-[-20px] opacity-70">
+            <p className="text-[14px] text-[#444] font-medium ml-[73px] mt-[-20px] opacity-70">
               Assistant Manager
             </p>
           </div>
@@ -722,12 +722,12 @@ export default function Home(){
               src={vector2}/>
             <p className="text-[16px] text-[#444] font-medium ml-[20px] leading-[30px] opacity-70">
               Lorem ipsum dolor sit amet
-              <br />
+              <br/>
               consectetur.Cursus mauris nisi
-              <br />
+              <br/>
               elementum adipiscing fringilla
-              <br /> nunc praesent. Lorem nunc
-              <br />
+              <br/> nunc praesent. Lorem nunc
+              <br/>
               dignissim maecenas nec at nulla.
             </p>
             <div className="flex">
@@ -748,12 +748,12 @@ export default function Home(){
               src={vector2}/>
             <p className="text-[16px] text-[#444] font-medium ml-[20px] leading-[30px] opacity-70">
               Lorem ipsum dolor sit amet
-              <br />
+              <br/>
               consectetur.Cursus mauris nisi
-              <br />
+              <br/>
               elementum adipiscing fringilla
-              <br /> nunc praesent. Lorem nunc
-              <br />
+              <br/> nunc praesent. Lorem nunc
+              <br/>
               dignissim maecenas nec at nulla.
             </p>
             <div className="flex">
