@@ -122,7 +122,7 @@ export default function Home(){
           </p>
         </div>
         <div className="flex">
-          <img src={group46} className="w-[55px] h-[32px] mt-[5px]"/>
+          <img src={group46} className="w-[55px] h-[32px] mt-[5px] ml-[15px]"/>&emsp;
           <p  className="text-[#444] text-[24px] font-bold ">
             ArtVenue
           </p>
@@ -137,14 +137,14 @@ export default function Home(){
           </p>
         </div>
         <div className="flex">
-          <img src={vector1}  className="w-[32px] h-[32px]"/>
+          <img src={vector1}  className="w-[32px] h-[32px] mt-[2px]"/>&nbsp;
           <p  className="text-[#444] text-[24px] font-bold ">
             Zoomerr
           </p>
         </div>
         <div className="flex">
-          <img src={group47}  className="w-[23px] h-[29px] m-[15px]"/>
-          <p  className="text-[#444] text-[24px] font-bold">
+          <img src={group47}  className="w-[23px] h-[29px] m-[15px] mt-[7px]"/>
+          <p  className="text-[#444] text-[24px] font-bold ">
             kontrastr
           </p>
         </div>
@@ -161,13 +161,13 @@ export default function Home(){
           </p>
         </div>
         <div className="flex">
-          <img src={group46}  className="w-[55px] h-[32px] m-[10px]"/>
-          <p className="text-[#444] text-[24px] font-bold " >
+          <img src={group46}  className="w-[55px] h-[32px] m-[10px]"/>&nbsp;
+          <p className="text-[#444] text-[24px] font-bold mt-[3px] " >
             ArtVenue
           </p>
         </div>
         <div className="flex">
-          <img src={group45} className="w-[55px] h-[32px] m-[10px]"/>
+          <img src={group45} className="w-[55px] h-[32px] m-[10px] mr-[3px]" />&nbsp;
           <p className="text-[#444] text-[24px] font-bold ">
             Smart
             <span  className="text-[#444] text-[24px] font-medium">
@@ -176,14 +176,14 @@ export default function Home(){
           </p>
         </div>
         <div className="flex">
-          <img src={vector1} className="w-[32px] h-[32px] " />
+          <img src={vector1} className="w-[32px] h-[32px] mt-[4px] ml-[5px]"/>&nbsp;
           <p className="text-[#444] text-[24px] font-bold">
             Zoomerr
           </p>
         </div>
         <div className="flex">
-          <img src={group47} className="w-[23px] h-[29px] m-[15px]"/>
-          <p className="text-[#444] text-[24px] font-bold">
+          <img src={group47} className="w-[23px] h-[29px] m-[15px] mt-[7px]"/>
+          <p className="text-[#444] text-[24px] font-bold ">
             kontrastr
           </p>
         </div>
@@ -204,7 +204,7 @@ export default function Home(){
           </p>
           <img src={star} className="w-[114px] h-[15px]" />
           <p className="text-[#FCFCFC] text-[18px] captilize font-medium opacity-70">
-            Lorem ipsum
+            Lorem Ipsum
           </p>
         </div>
         <div className="pr-[20px]" >
