@@ -89,7 +89,7 @@ export default function Home() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className="flex items-center justify-center md:justify-between mt-[50px] mb-[50px] ml-[35px]">
         <div>
           <p className="text-[#1B1B1B] text-[42px] font-bold leading-[140%] captilize ">
