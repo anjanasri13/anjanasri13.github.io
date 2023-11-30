@@ -76,7 +76,7 @@ const items = [
 
 const rootSubmenuKeys = ["sub1", "sub2", "sub4"];
 
-export default function Home(){
+export default function Home() {
   const [openKeys, setOpenKeys] = useState(["sub1"]);
   const onOpenChange = (keys) => {
     const latestOpenKey = keys.find((key) => openKeys.indexOf(key) === -1);
@@ -89,12 +89,12 @@ export default function Home(){
 
   return (
     <>
-      <Header/>
-      <div
-        className="flex items-center justify-center md:justify-between mt-[50px] mb-[50px] ml-[35px]">
+      <Header />
+      <div className="flex items-center justify-center md:justify-between mt-[50px] mb-[50px] ml-[35px]">
         <div>
           <p className="text-[#1B1B1B] text-[42px] font-bold leading-[140%] captilize ">
-            Monitor and track Real-time<br/>
+            Monitor and track Real-time
+            <br />
             online price insights.
           </p>
           <p className="text-[#1B1B1B] text-[16px] font-medium leading-[30px] captilize opacity-70">
@@ -102,57 +102,21 @@ export default function Home(){
             manual price-tracking processesacross multiple online
             <br /> platforms.
           </p>
-          <button className="border-[none] rounded-[108px] bg-[#5245A6] text-[#FFF] capitalize text-[14px] font-semibold
-          inline-flex py-[15px] px-[22px] items-center justify-center gap-[10px]">Get free Trial</button>
+          <button
+            className="border-[none] rounded-[108px] bg-[#5245A6] text-[#FFF] capitalize text-[14px] font-semibold
+          inline-flex py-[15px] px-[22px] items-center justify-center gap-[10px]"
+          >
+            Get free Trial
+          </button>
         </div>
         <div>
-          <img
-            src={rect} className="w-[639px] h-[405px] rounded-[12px] "></img>
-        </div>
-      </div>
-
-      <div className="flex justify-between items-center m-[30px]" >
-        <div className="flex">
-          <img src={vector} className="w-[21px] h-[32px] m-[10px]"/>
-          <p className="text-[#444] text-[18px] font-bold mt-[15px]" >
-            WAVES
-            <span className="text-[#444] text-[18px] font-normal">
-              MARATHON
-            </span>
-          </p>
-        </div>
-        <div className="flex">
-          <img src={group46} className="w-[55px] h-[32px] mt-[5px] ml-[15px]"/>&emsp;
-          <p  className="text-[#444] text-[24px] font-bold ">
-            ArtVenue
-          </p>
-        </div>
-        <div className="flex">
-          <img src={group45}  className="w-[55px] h-[32px] m-[10px]" />
-          <p className="text-[#444] text-[24px] font-bold ">
-            Smart
-            <span  className="text-[#444] text-[24px] font-medium">
-              Finder
-            </span>
-          </p>
-        </div>
-        <div className="flex">
-          <img src={vector1}  className="w-[32px] h-[32px] mt-[2px]"/>&nbsp;
-          <p  className="text-[#444] text-[24px] font-bold ">
-            Zoomerr
-          </p>
-        </div>
-        <div className="flex">
-          <img src={group47}  className="w-[23px] h-[29px] m-[15px] mt-[7px]"/>
-          <p  className="text-[#444] text-[24px] font-bold ">
-            kontrastr
-          </p>
+          <img src={rect} className="w-[639px] h-[405px] rounded-[12px] "></img>
         </div>
       </div>
 
       <div className="flex justify-between items-center m-[30px]">
         <div className="flex">
-          <img src={vector}  className="w-[21px] h-[32px] m-[10px]"/>
+          <img src={vector} className="w-[21px] h-[32px] m-[10px]" />
           <p className="text-[#444] text-[18px] font-bold mt-[15px]">
             WAVES
             <span className="text-[#444] text-[18px] font-normal">
@@ -161,31 +125,61 @@ export default function Home(){
           </p>
         </div>
         <div className="flex">
-          <img src={group46}  className="w-[55px] h-[32px] m-[10px]"/>&nbsp;
-          <p className="text-[#444] text-[24px] font-bold mt-[3px] " >
-            ArtVenue
+          <img src={group46} className="w-[55px] h-[32px] mt-[5px] ml-[15px]" />
+          &emsp;
+          <p className="text-[#444] text-[24px] font-bold ">ArtVenue</p>
+        </div>
+        <div className="flex">
+          <img src={group45} className="w-[55px] h-[32px] m-[10px]" />
+          <p className="text-[#444] text-[24px] font-bold ">
+            Smart
+            <span className="text-[#444] text-[24px] font-medium">Finder</span>
           </p>
         </div>
         <div className="flex">
-          <img src={group45} className="w-[55px] h-[32px] m-[10px] mr-[3px]" />&nbsp;
-          <p className="text-[#444] text-[24px] font-bold ">
-            Smart
-            <span  className="text-[#444] text-[24px] font-medium">
-              Finder
+          <img src={vector1} className="w-[32px] h-[32px] mt-[2px]" />
+          &nbsp;
+          <p className="text-[#444] text-[24px] font-bold ">Zoomerr</p>
+        </div>
+        <div className="flex">
+          <img src={group47} className="w-[23px] h-[29px] m-[15px] mt-[7px]" />
+          <p className="text-[#444] text-[24px] font-bold ">kontrastr</p>
+        </div>
+      </div>
+
+      <div className="flex justify-between items-center m-[30px]">
+        <div className="flex">
+          <img src={vector} className="w-[21px] h-[32px] m-[10px]" />
+          <p className="text-[#444] text-[18px] font-bold mt-[15px]">
+            WAVES
+            <span className="text-[#444] text-[18px] font-normal">
+              MARATHON
             </span>
           </p>
         </div>
         <div className="flex">
-          <img src={vector1} className="w-[32px] h-[32px] mt-[4px] ml-[5px]"/>&nbsp;
-          <p className="text-[#444] text-[24px] font-bold">
-            Zoomerr
+          <img src={group46} className="w-[55px] h-[32px] m-[10px]" />
+          &nbsp;
+          <p className="text-[#444] text-[24px] font-bold mt-[3px] ">
+            ArtVenue
           </p>
         </div>
         <div className="flex">
-          <img src={group47} className="w-[23px] h-[29px] m-[15px] mt-[7px]"/>
+          <img src={group45} className="w-[55px] h-[32px] m-[10px] mr-[3px]" />
+          &nbsp;
           <p className="text-[#444] text-[24px] font-bold ">
-            kontrastr
+            Smart
+            <span className="text-[#444] text-[24px] font-medium">Finder</span>
           </p>
+        </div>
+        <div className="flex">
+          <img src={vector1} className="w-[32px] h-[32px] mt-[4px] ml-[5px]" />
+          &nbsp;
+          <p className="text-[#444] text-[24px] font-bold">Zoomerr</p>
+        </div>
+        <div className="flex">
+          <img src={group47} className="w-[23px] h-[29px] m-[15px] mt-[7px]" />
+          <p className="text-[#444] text-[24px] font-bold ">kontrastr</p>
         </div>
       </div>
 
@@ -199,27 +193,25 @@ export default function Home(){
           </p>
         </div>
         <div>
-          <p className="text-[#FCFCFC] text-[42px] captilize font-bold">
-            4.9
-          </p>
+          <p className="text-[#FCFCFC] text-[42px] captilize font-bold">4.9</p>
           <img src={star} className="w-[114px] h-[15px]" />
           <p className="text-[#FCFCFC] text-[18px] captilize font-medium opacity-70">
             Lorem Ipsum
           </p>
         </div>
-        <div className="pr-[20px]" >
-          <p className="text-[#FCFCFC] text-[42px] font-bold">
-            4.7
-          </p>
-          <img src={star} className="w-[114px] h-[15px]"/>
+        <div className="pr-[20px]">
+          <p className="text-[#FCFCFC] text-[42px] font-bold">4.7</p>
+          <img src={star} className="w-[114px] h-[15px]" />
           <p className="text-[#FCFCFC] text-[18px] captilize font-medium opacity-70">
             Lorem ipsum
           </p>
         </div>
       </div>
 
-      <div className="rounded-[60px] bg-[#E5E3F2] justify-center items-center flex ml-[20px] 
-      mr-[1140px] py-[-1px] px-[16px] mt-[50px]">
+      <div
+        className="rounded-[60px] bg-[#E5E3F2] justify-center items-center flex ml-[20px] 
+      mr-[1140px] py-[-1px] px-[16px] mt-[50px]"
+      >
         <p className="text-[#5245A6] text-[14px] font-semibold pt-[8px] uppercase text-center">
           features
         </p>
@@ -237,7 +229,7 @@ export default function Home(){
 
       <div className="flex ml-[20px] justify-between">
         <div>
-          <img src={dollar} className="w-[64px] h-[64px]"/>
+          <img src={dollar} className="w-[64px] h-[64px]" />
           <Two>Dynamic Market Pricing</Two>
           <One>
             In the e-commerce world, prices are subject to
@@ -245,10 +237,10 @@ export default function Home(){
             competition, and seasonality. Keeping track&nbsp; of these changes
             and adjusting prices accordingly can be an arduous and
             time-consuming process.
-            </One>
+          </One>
         </div>
         <div>
-          <img src={com} className="w-[64px] h-[64px]"/>
+          <img src={com} className="w-[64px] h-[64px]" />
           <Two>Competitive Pricing</Two>
           <One>
             Staying competitive is essential, and Metrics IQ <br />
@@ -259,7 +251,7 @@ export default function Home(){
           </One>
         </div>
         <div>
-          <img src={data}  className="w-[64px] h-[64px]" />
+          <img src={data} className="w-[64px] h-[64px]" />
           <Two>Data Analysis and Insights</Two>
           <One>
             Metrics IQ leverages data analytics and algorithms to provide
@@ -271,7 +263,7 @@ export default function Home(){
       </div>
       <div className="flex ml-[20px] justify-evenly mt-[20px]">
         <div>
-          <img src={time}  className="w-[64px] h-[64px]" />
+          <img src={time} className="w-[64px] h-[64px]" />
           <Two>Time Efficiency</Two>
           <One>
             Manually adjusting prices across a vast product catalog is
@@ -280,7 +272,7 @@ export default function Home(){
           </One>
         </div>
         <div className="ml-[50px]">
-          <img src={error}  className="w-[64px] h-[64px]" />
+          <img src={error} className="w-[64px] h-[64px]" />
           <Two>Pricing Errors</Two>
           <One>
             Human errors in pricing can result in revenue losses or customer
@@ -289,14 +281,14 @@ export default function Home(){
           </One>
         </div>
         <div className="ml-[70px]">
-          <img src={customer}  className="w-[64px] h-[64px]" />
+          <img src={customer} className="w-[64px] h-[64px]" />
           <Two>Customer Experience</Two>
           <One>
             Consistently offering competitive prices contributes to an improved
             customer experience. It helps in building trust and brand loyalty,
             as customers are more likely to return to retailers that
             consistently offer fair prices
-            </One>
+          </One>
         </div>
       </div>
       <div className="rounded-[60px] bg-[#E5E3F2] justify-center items-center flex ml-[580px] mr-[580px] mt-[70px]">
@@ -318,59 +310,74 @@ export default function Home(){
 
       <div className="flex justify-evenly items-center">
         <div>
-          <img
-            src={Amazon} className="w-[40px] h-[40px] ml-[130px]"/>
-          <div className="w-[190px] h-[1px] ml-[60px] mt-[10px] bg-[#4444444D]"/>
-          <p className="text-[#444] text-[24px] font-semibold capitalize ml-[110px]">Amazon</p>
+          <img src={Amazon} className="w-[40px] h-[40px] ml-[130px]" />
+          <div className="w-[190px] h-[1px] ml-[60px] mt-[10px] bg-[#4444444D]" />
+          <p className="text-[#444] text-[24px] font-semibold capitalize ml-[110px]">
+            Amazon
+          </p>
           <Four>
-            Effortlessly track Amazon <br/> prices with accurate <br />
+            Effortlessly track Amazon <br /> prices with accurate <br />
             historical data.
           </Four>
           <button className="flex text-[#2699D8] text-[18px] font-semibold capitalize ml-[110px]">
-            View More &nbsp;<span className="mt-[8px] "><BsArrowRight /></span>
+            View More &nbsp;
+            <span className="mt-[8px] ">
+              <BsArrowRight />
+            </span>
           </button>
         </div>
         <div>
-          <img
-            src={flipkart}  className="w-[40px] h-[40px] ml-[130px]"/>
-          <div className="w-[190px] h-[1px] ml-[60px] mt-[10px] bg-[#4444444D]"/>
-          <p className="text-[#444] text-[24px] font-semibold capitalize ml-[110px]">Flipkart</p>
+          <img src={flipkart} className="w-[40px] h-[40px] ml-[130px]" />
+          <div className="w-[190px] h-[1px] ml-[60px] mt-[10px] bg-[#4444444D]" />
+          <p className="text-[#444] text-[24px] font-semibold capitalize ml-[110px]">
+            Flipkart
+          </p>
           <Four>
             Stay updated on Flipkart prices
             <br /> with comprehensive price <br />
             history.
           </Four>
           <button className="flex text-[#2699D8] text-[18px] font-semibold capitalize ml-[110px]">
-            View More &nbsp; <span className="mt-[8px] ">
-            <BsArrowRight /></span>
+            View More &nbsp;{" "}
+            <span className="mt-[8px] ">
+              <BsArrowRight />
+            </span>
           </button>
         </div>
         <div>
           <img src={noon} className="w-[40px] h-[40px] ml-[130px]" />
-          <div  className="w-[190px] h-[1px] ml-[60px] mt-[10px] bg-[#4444444D]"/>
-          <p className="text-[#444] text-[24px] font-semibold capitalize ml-[120px]">Noon</p>
+          <div className="w-[190px] h-[1px] ml-[60px] mt-[10px] bg-[#4444444D]" />
+          <p className="text-[#444] text-[24px] font-semibold capitalize ml-[120px]">
+            Noon
+          </p>
           <Four>
             Stay updated on Noon prices
             <br /> with comprehensive price
             <br /> history.
           </Four>
           <button className="flex text-[#2699D8] text-[18px] font-semibold capitalize ml-[110px]">
-            View More &nbsp; <span className="mt-[8px] ">
-            <BsArrowRight /></span>
+            View More &nbsp;{" "}
+            <span className="mt-[8px] ">
+              <BsArrowRight />
+            </span>
           </button>
         </div>
         <div>
-          <img src={fc} className="w-[40px] h-[40px] ml-[130px]"/>
-          <div className="w-[190px] h-[1px] ml-[60px] mt-[10px] bg-[#4444444D]"/>
-          <p className="text-[#444] text-[24px] font-semibold capitalize ml-[120px]">FirstCry</p>
+          <img src={fc} className="w-[40px] h-[40px] ml-[130px]" />
+          <div className="w-[190px] h-[1px] ml-[60px] mt-[10px] bg-[#4444444D]" />
+          <p className="text-[#444] text-[24px] font-semibold capitalize ml-[120px]">
+            FirstCry
+          </p>
           <Four>
             Stay updated on FirstCry prices <br />
             with comprehensive price
             <br /> history.
           </Four>
           <button className="flex text-[#2699D8] text-[18px] font-semibold capitalize ml-[110px]">
-            View More &nbsp;<span className="mt-[8px]">
-            <BsArrowRight /></span>
+            View More &nbsp;
+            <span className="mt-[8px]">
+              <BsArrowRight />
+            </span>
           </button>
         </div>
       </div>
@@ -378,35 +385,27 @@ export default function Home(){
         Lorem ipsum dolor sit amet consectetur dolor sit
       </p>
 
-      <div  className='flex items-center ml-[320px]'>
+      <div className="flex items-center ml-[320px]">
         <div className="rounded-[8px] bg-[#FFF] px-[30px] mr-[20px] shadow-md">
-          <p className="text-[#444] text-[28px] font-bold text-center">
-            120%
-          </p>
+          <p className="text-[#444] text-[28px] font-bold text-center">120%</p>
           <p className="text-[#444] text-[16px] font-medium opacity-70">
             Lorem ipsum
           </p>
         </div>
         <div className="rounded-[8px] bg-[#FFF] px-[30px] mr-[20px] shadow-md">
-          <p className="text-[#444] text-[28px] font-bold text-center">
-            430+
-          </p>
+          <p className="text-[#444] text-[28px] font-bold text-center">430+</p>
           <p className="text-[#444] text-[16px] font-medium opacity-70">
             Lorem ipsum
           </p>
         </div>
         <div className="rounded-[8px] bg-[#FFF] px-[30px] mr-[20px] shadow-md">
-          <p className="text-[#444] text-[28px] font-bold  text-center ">
-            75+
-          </p>
+          <p className="text-[#444] text-[28px] font-bold  text-center ">75+</p>
           <p className="text-[#444] text-[16px] font-medium opacity-70">
             Lorem ipsum
           </p>
         </div>
         <div className="rounded-[8px] bg-[#FFF] px-[30px] mr-[20px] shadow-md">
-          <p className="text-[#444] text-[28px] font-bold text-center">
-            99%
-          </p>
+          <p className="text-[#444] text-[28px] font-bold text-center">99%</p>
           <p className="text-[#444] text-[16px] font-medium opacity-70">
             Lorem ipsum
           </p>
@@ -421,7 +420,7 @@ export default function Home(){
         </div>
         <p className="text-[#444] text-[38px] ml-[20px] font-bold capitalize">
           Lorem ipsum dolor sit
-          <br/> amet consectetur
+          <br /> amet consectetur
         </p>
         <p className="text-[#444] text-[18px] ml-[20px] font-medium capitalize opacity-70">
           Lorem ipsum dolor sit amet consectetur. Iaculis sed <br />
@@ -429,43 +428,49 @@ export default function Home(){
           <br />
           sed.Sit in nulla imperdiet tempor ipsum.
         </p>
-        <div className="h-[1px] w-[490px] bg-[#00000033] ml-[20px] mt-[10px]"/>
+        <div className="h-[1px] w-[490px] bg-[#00000033] ml-[20px] mt-[10px]" />
         <div className="flex mt-[30px]">
           <div>
-            <img src={time} className="w-[64px] h-[64px] ml-[20px]"/>
+            <img src={time} className="w-[64px] h-[64px] ml-[20px]" />
             <p className="text-[#444] text-[18px] font-medium ml-[20px]">
               Lorem Ipsum
             </p>
-            <p  className="text-[#444] text-[16px] font-medium opacity-70 leading-[30px] ml-[20px] capitalize">
+            <p className="text-[#444] text-[16px] font-medium opacity-70 leading-[30px] ml-[20px] capitalize">
               Lorem ipsum dolor sit amet consectetur. Iaculis sed viverra
-              <br/> pretium sed.
+              <br /> pretium sed.
             </p>
           </div>
           <div>
-            <img src={time}className="w-[64px] h-[64px] ml-[20px]"/>
+            <img src={time} className="w-[64px] h-[64px] ml-[20px]" />
             <p className="text-[#444] text-[18px] font-medium ml-[20px]">
               Lorem Ipsum
             </p>
-            <p className="text-[#444] text-[16px] font-medium opacity-70 leading-[30px] ml-[20px] capitalize" >
+            <p className="text-[#444] text-[16px] font-medium opacity-70 leading-[30px] ml-[20px] capitalize">
               Lorem ipsum dolor sit amet consectetur. Iaculis sed viverra
-              <br/> pretium sed.
+              <br /> pretium sed.
             </p>
           </div>
 
           <img
-            src={rect} className="w-[632px] h-[505px] rounded-[30px] mt-[-230px]"/>
+            src={rect}
+            className="w-[632px] h-[505px] rounded-[30px] mt-[-230px]"
+          />
         </div>
       </div>
 
       <div className="flex">
         <div>
           <img
-            src={Reactangle} className="w-[608px] h-[663px] rounded-[30px] ml-[40px]"/>
+            src={Reactangle}
+            className="w-[608px] h-[663px] rounded-[30px] ml-[40px]"
+          />
         </div>
 
         <div>
-          <p className="text-[#5245A6] text-[14px] font-semibold uppercase bg-[#E5E3F2] ml-[50px] mr-[400px] 
-          mt-[30px] rounded-[60px] py-[8px] px-[12px]">
+          <p
+            className="text-[#5245A6] text-[14px] font-semibold uppercase bg-[#E5E3F2] ml-[50px] mr-[400px] 
+          mt-[30px] rounded-[60px] py-[8px] px-[12px]"
+          >
             Lorem Ipsum
           </p>
           <p className="text-[#444] text-[38px] font-bold capitalize ml-[50px]">
@@ -479,33 +484,27 @@ export default function Home(){
             imperdiet viverra iaculis morbi euismod vel sollicitudin
             <br /> tortor Sed vitae.
           </p>
-          <div  className="h-[1px] w-[505px] bg-[#00000033] ml-[38px] mt-[10px]"/>
+          <div className="h-[1px] w-[505px] bg-[#00000033] ml-[38px] mt-[10px]" />
           <div className="flex mt-[30px] ml-[50px]">
-          <Tick src={tick} />
+            <Tick src={tick} />
             &emsp;
-            <p className="mr-[30px] mt-[15px]">
-              Lorem ipsum dolor sit
-            </p>
+            <p className="mr-[30px] mt-[15px]">Lorem ipsum dolor sit</p>
             <Tick src={tick} />
             &emsp;
             <p className="mt-[15px]">Lorem ipsum dolor sit</p>
           </div>
           <div className="flex ml-[50px]">
-          <Tick src={tick} />
-            &emsp;
-            <p className="mr-[30px] mt-[15px]">
-              Lorem ipsum dolor sit
-            </p>
             <Tick src={tick} />
             &emsp;
-            <p className="mt-[15px]" >Lorem ipsum dolor sit</p>
+            <p className="mr-[30px] mt-[15px]">Lorem ipsum dolor sit</p>
+            <Tick src={tick} />
+            &emsp;
+            <p className="mt-[15px]">Lorem ipsum dolor sit</p>
           </div>
           <div className="flex ml-[50px]">
-          <Tick src={tick} />
+            <Tick src={tick} />
             &emsp;
-            <p className="mr-[30px] mt-[15px]">
-              Lorem ipsum dolor sit
-            </p>
+            <p className="mr-[30px] mt-[15px]">Lorem ipsum dolor sit</p>
             <Tick src={tick} />
             &emsp;
             <p className="mt-[15px]">Lorem ipsum dolor sit</p>
@@ -514,7 +513,7 @@ export default function Home(){
       </div>
 
       <div className="bg-[F7F7F7] pt-[1px] mt-[50px] mb-[70px] pb-[35px]">
-        <div  className="rounded-[60px] bg-[#E5E3F2] justify-center items-center mt-[90px] ml-[30px] mr-[1090px] pt-[1px]">
+        <div className="rounded-[60px] bg-[#E5E3F2] justify-center items-center mt-[90px] ml-[30px] mr-[1090px] pt-[1px]">
           <p className="text-[#5245A6] text-center uppercase text-[14px] py-[5px] font-semibold ">
             Lorem ipsum
           </p>
@@ -529,32 +528,38 @@ export default function Home(){
           <br />
           sed. Sit in nulla imperdiet tempor ipsum.
         </p>
-        <div  className="h-[1px] w-[490px] bg-[#00000033] ml-[20px] mt-[10px]"/>
+        <div className="h-[1px] w-[490px] bg-[#00000033] ml-[20px] mt-[10px]" />
         <p className="text-[#444] text-[28px] ml-[20px] mt-[20px] font-bold">
           25%{" "}
           <span className="text-[16px] font-medium opacity-70">
             Lorem Ipsum
           </span>
         </p>
-        <p  className="text-[#444] text-[28px] ml-[20px]  font-bold">
+        <p className="text-[#444] text-[28px] ml-[20px]  font-bold">
           1.7X{" "}
           <span className="text-[16px] font-medium opacity-70">
             Lorem Ipsum
           </span>
         </p>
         <img
-          src={rect} className="w-[632px] h-[505px] rounded-[30px] ml-[580px] mt-[-350px]"/>
+          src={rect}
+          className="w-[632px] h-[505px] rounded-[30px] ml-[580px] mt-[-350px]"
+        />
       </div>
 
       <div className="flex">
         <div>
           <img
-            src={Reactangle1} className="w-[580px] h-[473px] ml-[40px] rounded-[30px]"/>
+            src={Reactangle1}
+            className="w-[580px] h-[473px] ml-[40px] rounded-[30px]"
+          />
         </div>
 
         <div>
-          <p className="text-[#5245A6] text-[14px] font-semibold uppercase bg-[#E5E3F2] ml-[59px] mr-[400px] 
-          mt-[10px] rounded-[60px] py-[9px] px-[30px]">
+          <p
+            className="text-[#5245A6] text-[14px] font-semibold uppercase bg-[#E5E3F2] ml-[59px] mr-[400px] 
+          mt-[10px] rounded-[60px] py-[9px] px-[30px]"
+          >
             Lorem Ipsum
           </p>
           <p className="text-[#444] text-[38px] font-bold capitalize ml-[59px] mt-[10px]">
@@ -570,23 +575,30 @@ export default function Home(){
           <div className="flex mt-[30px]">
             <div>
               <img
-                src={time} className="w-[64px] h-[64px] ml-[60px] mb-[5px]"/>
+                src={time}
+                className="w-[64px] h-[64px] ml-[60px] mb-[5px]"
+              />
               <p className="text-[#444] text-[18px] font-medium ml-[63px]">
                 Lorem Ipsum
               </p>
               <p className="text-[#444] text-[16px] font-medium opacity-70 leading-[30px] capitalize ml-[59px]">
-                Lorem ipsum dolor sit amet <br/> consectetur. Iaculis sed viverra<br /> pretium sed.
+                Lorem ipsum dolor sit amet <br /> consectetur. Iaculis sed
+                viverra
+                <br /> pretium sed.
               </p>
             </div>
             <div>
               <img
-                src={time} className="w-[64px] h-[64px] ml-[30px] mb-[5px]"/>
+                src={time}
+                className="w-[64px] h-[64px] ml-[30px] mb-[5px]"
+              />
               <p className="text-[#444] text-[18px] font-medium ml-[30px]">
                 Lorem Ipsum
               </p>
               <p className="text-[#444] text-[16px] font-medium opacity-70 leading-[30px] capitalize ml-[30px]">
                 {" "}
-                Lorem ipsum dolor sit amet <br/>consectetur. Iaculis sed viverra
+                Lorem ipsum dolor sit amet <br />
+                consectetur. Iaculis sed viverra
                 <br /> pretium sed.
               </p>
             </div>
@@ -595,8 +607,8 @@ export default function Home(){
       </div>
 
       <div className="bg-[#F7F7F7] pt-[1px] mt-[50px] mb-[70px] pb-[35px]">
-        <div  className="rounded-[60px] bg-[#E5E3F2] justify-center items-center mt-[90px] ml-[30px] mr-[1090px] p-[1px]">
-          <p  className="text-[#5245A6] text-center uppercase text-[14px] pt-[8px] font-semibold">
+        <div className="rounded-[60px] bg-[#E5E3F2] justify-center items-center mt-[90px] ml-[30px] mr-[1090px] p-[1px]">
+          <p className="text-[#5245A6] text-center uppercase text-[14px] pt-[8px] font-semibold">
             Lorem ipsum
           </p>
         </div>
@@ -610,15 +622,18 @@ export default function Home(){
           <br />
           sed. Sit in nulla imperdiet tempor ipsum.
         </p>
-        <div className="h-[1px] w-[490px] bg-[#00000033] ml-[20px] mt-[10px]"/>
+        <div className="h-[1px] w-[490px] bg-[#00000033] ml-[20px] mt-[10px]" />
         <Menu
           mode="inline"
           openKeys={openKeys}
-          onOpenChange={onOpenChange} className="w-[496px] mt-[20px] bg-[#F7F7F7] border-none"
+          onOpenChange={onOpenChange}
+          className="w-[496px] mt-[20px] bg-[#F7F7F7] border-none"
           items={items}
         />
         <img
-          src={Reactangle2} className="w-[632px] h-[505px] roundeed-[30px] ml-[580px] mt-[-420px]"/>
+          src={Reactangle2}
+          className="w-[632px] h-[505px] roundeed-[30px] ml-[580px] mt-[-420px]"
+        />
       </div>
 
       <div className="flex justify-between bg-[#5245A6] rounded-[14px] ml-[50px] mr-[50px] pb-[30px]">
@@ -633,19 +648,26 @@ export default function Home(){
             sed. Sit in nulla imperdiet tempor ipsum.
           </p>
           <div className="flex">
-          <button className="text-[18px] bg-[white] font-medium rounded-[130px] border-none py-[10px] px-[35px] ml-[40px]">
-            Get Started </button>
-            <p className="ml-[-25px] mt-[20px]"><IoIosArrowForward /></p>
+            <button className="text-[18px] bg-[white] font-medium rounded-[130px] border-none py-[10px] px-[35px] ml-[40px]">
+              Get Started{" "}
+            </button>
+            <p className="ml-[-25px] mt-[20px]">
+              <IoIosArrowForward />
+            </p>
           </div>
-        </div>                      
-         
+        </div>
+
         <div>
           <img
-            src={Reactangle12440} className="w-[307px] h-[310px] pt-[40px]"/>
+            src={Reactangle12440}
+            className="w-[307px] h-[310px] pt-[40px]"
+          />
         </div>
         <div>
           <img
-            src={Reactangle12440} className="w-[236px] h-[244px] pt-[40px]"/>
+            src={Reactangle12440}
+            className="w-[236px] h-[244px] pt-[40px]"
+          />
         </div>
       </div>
 
@@ -658,16 +680,20 @@ export default function Home(){
         <p className="text-[#444] text-[38px] ml-[40px] font-bold capitalize flex">
           Lorem ipsum dolor sit
           <br /> amet consectetur{" "}
-          <p  className="ml-[550px] mt-[20px] flex">
+          <p className="ml-[550px] mt-[20px] flex">
             <IoIosArrowDropleft />
 
-           <p><IoIosArrowDroprightCircle /></p> 
+            <p>
+              <IoIosArrowDroprightCircle />
+            </p>
           </p>
         </p>
         <div className="flex p-[30px] items-start gap-[16px] ml-[20px]">
           <div className="rounded-[16px] bg-[#FFF] pr-[15px] shadow-md">
-            <img className="w-[20px] h-[19px] mt-[20px] ml-[20px]"
-              src={vector2}/>
+            <img
+              className="w-[20px] h-[19px] mt-[20px] ml-[20px]"
+              src={vector2}
+            />
             <p className="text-[16px] text-[#444] font-medium ml-[20px] leading-[30px] opacity-70">
               Lorem ipsum dolor sit amet
               <br />
@@ -679,21 +705,25 @@ export default function Home(){
               dignissim maecenas nec at nulla.
             </p>
             <div className="flex">
-              <img className="w-[40px] h-[40px] rounded-[40px] ml-[20px]"
-                src={ellipse2}/>
+              <img
+                className="w-[40px] h-[40px] rounded-[40px] ml-[20px]"
+                src={ellipse2}
+              />
               &emsp;
-              <p className="text-[16px] text-[#444] mt-[3px] font-medium" >
+              <p className="text-[16px] text-[#444] mt-[3px] font-medium">
                 Adam Smith
               </p>
             </div>
-            <p  className="text-[14px] text-[#444] mt-[-20px] ml-[75px] font-medium opacity-70" >
+            <p className="text-[14px] text-[#444] mt-[-20px] ml-[75px] font-medium opacity-70">
               General Manager
             </p>
           </div>
 
           <div className="rounded-[16px] bg-[#FFF] pr-[15px] shadow-md">
-            <img className="w-[20px] h-[19px] mt-[20px] ml-[20px]"
-              src={vector2}/>
+            <img
+              className="w-[20px] h-[19px] mt-[20px] ml-[20px]"
+              src={vector2}
+            />
             <p className="text-[16px] text-[#444] font-medium ml-[20px] leading-[30px] opacity-70">
               Lorem ipsum dolor sit amet
               <br />
@@ -705,8 +735,10 @@ export default function Home(){
               dignissim maecenas nec at nulla.
             </p>
             <div className="flex">
-              <img className="w-[40px] h-[40px] rounded-[40px] mt-[5px] ml-[20px]"
-                src={ellipse2}/>
+              <img
+                className="w-[40px] h-[40px] rounded-[40px] mt-[5px] ml-[20px]"
+                src={ellipse2}
+              />
               &emsp;
               <p className="text-[16px] text-[#444] mt-[3px] font-semibold">
                 Sara
@@ -718,23 +750,27 @@ export default function Home(){
           </div>
 
           <div className="rounded-[16px] bg-[#FFF] pr-[15px] shadow-md">
-            <img className="w-[20px] h-[19px] mt-[20px] ml-[20px]"
-              src={vector2}/>
+            <img
+              className="w-[20px] h-[19px] mt-[20px] ml-[20px]"
+              src={vector2}
+            />
             <p className="text-[16px] text-[#444] font-medium ml-[20px] leading-[30px] opacity-70">
               Lorem ipsum dolor sit amet
-              <br/>
+              <br />
               consectetur.Cursus mauris nisi
-              <br/>
+              <br />
               elementum adipiscing fringilla
-              <br/> nunc praesent. Lorem nunc
-              <br/>
+              <br /> nunc praesent. Lorem nunc
+              <br />
               dignissim maecenas nec at nulla.
             </p>
             <div className="flex">
-              <img className="w-[40px] h-[40px] rounded-[40px] ml-[20px]"
-                src={ellipse2}/>
+              <img
+                className="w-[40px] h-[40px] rounded-[40px] ml-[20px]"
+                src={ellipse2}
+              />
               &emsp;
-              <p  className="text-[16px] text-[#444] mt-[3px] font-semibold">
+              <p className="text-[16px] text-[#444] mt-[3px] font-semibold">
                 Andriya
               </p>
             </div>
@@ -744,21 +780,25 @@ export default function Home(){
           </div>
 
           <div className="rounded-[16px] bg-[#FFF] pr-[15px] shadow-md">
-            <img className="w-[20px] h-[19px] mt-[20px] ml-[20px]"
-              src={vector2}/>
+            <img
+              className="w-[20px] h-[19px] mt-[20px] ml-[20px]"
+              src={vector2}
+            />
             <p className="text-[16px] text-[#444] font-medium ml-[20px] leading-[30px] opacity-70">
               Lorem ipsum dolor sit amet
-              <br/>
+              <br />
               consectetur.Cursus mauris nisi
-              <br/>
+              <br />
               elementum adipiscing fringilla
-              <br/> nunc praesent. Lorem nunc
-              <br/>
+              <br /> nunc praesent. Lorem nunc
+              <br />
               dignissim maecenas nec at nulla.
             </p>
             <div className="flex">
-              <img className="w-[40px] h-[40px] rounded-[40px] ml-[20px]"
-                src={ellipse2}/>
+              <img
+                className="w-[40px] h-[40px] rounded-[40px] ml-[20px]"
+                src={ellipse2}
+              />
               &emsp;
               <p className="text-[16px] text-[#444] mt-[3px] font-medium">
                 Adam Zamba
@@ -781,7 +821,8 @@ export default function Home(){
           <Menu
             mode="inline"
             openKeys={openKeys}
-            onOpenChange={onOpenChange} className="w-[576px] mt-[20px] bg-[#F7F7F7] border-none rounded-[20px]"
+            onOpenChange={onOpenChange}
+            className="w-[576px] mt-[20px] bg-[#F7F7F7] border-none rounded-[20px]"
             items={items}
           />
         </div>
@@ -789,7 +830,8 @@ export default function Home(){
           <Menu
             mode="inline"
             openKeys={openKeys}
-            onOpenChange={onOpenChange} className="w-[576px] mt-[20px] bg-[#F7F7F7] border-none rounded-[20px]"
+            onOpenChange={onOpenChange}
+            className="w-[576px] mt-[20px] bg-[#F7F7F7] border-none rounded-[20px]"
             items={items}
           />
         </div>
@@ -838,7 +880,7 @@ export default function Home(){
                     $99<span>/ For 56 days</span>
                   </h1>
                 </div>
-                <div className="h-[1px] bg-[#444444] mt-[15px] mb-[-25px]"/>
+                <div className="h-[1px] bg-[#444444] mt-[15px] mb-[-25px]" />
                 <div class="price-features mt-5">
                   <p className="text-[#444] text-[20px] font-semibold">
                     What's Include?
@@ -867,7 +909,8 @@ export default function Home(){
                   <a
                     href="#/"
                     class="btn btn-custom"
-                    className="text-[#5245A6] hover:text-[#5245A6] py-[5px] px-[40px] rounded-[108px] border-soild border-[1px] no-underline	 hover:no-underline">
+                    className="text-[#5245A6] hover:text-[#5245A6] py-[5px] px-[40px] rounded-[108px] border-soild border-[1px] no-underline	 hover:no-underline"
+                  >
                     Start Free Trial
                   </a>
                 </div>
@@ -883,9 +926,9 @@ export default function Home(){
                     $178<span>/ For 56 days</span>
                   </h1>
                 </div>
-                <div className="h-[1px] bg-[#444444] mt-[15px] mb-[-25px]"/>
+                <div className="h-[1px] bg-[#444444] mt-[15px] mb-[-25px]" />
                 <div class="price-features mt-5">
-                  <p className="text-[#444] text-[20px] font-semibold" >
+                  <p className="text-[#444] text-[20px] font-semibold">
                     What's Include?
                   </p>
                   <p>
@@ -911,7 +954,9 @@ export default function Home(){
                 <div class="text-center mt-5">
                   <a
                     href="#/"
-                    class="btn btn-custom" className="text-white hover:text-white rounded-[108px] bg-[#5245A6] py-[5px] px-[40px]  no-underline hover:no-underline">
+                    class="btn btn-custom"
+                    className="text-white hover:text-white rounded-[108px] bg-[#5245A6] py-[5px] px-[40px]  no-underline hover:no-underline"
+                  >
                     Start Free Trial
                   </a>
                 </div>
@@ -927,7 +972,7 @@ export default function Home(){
                     $252<span>/ For 56 days</span>
                   </h1>
                 </div>
-                <div className="h-[1px] bg-[#444444] mt-[15px] mb-[-25px]"/>
+                <div className="h-[1px] bg-[#444444] mt-[15px] mb-[-25px]" />
                 <div class="price-features mt-5">
                   <p className="text-[#444] text-[20px] font-semibold">
                     What's Include?
@@ -955,7 +1000,9 @@ export default function Home(){
                 <div class="text-center mt-5">
                   <a
                     href="#/"
-                    class="btn btn-custom" className="text-[#5245A6] hover:text-[#5245A6] py-[5px] px-[40px] rounded-[108px] border-solid border-[1px] no-underline hover:no-underline" >
+                    class="btn btn-custom"
+                    className="text-[#5245A6] hover:text-[#5245A6] py-[5px] px-[40px] rounded-[108px] border-solid border-[1px] no-underline hover:no-underline"
+                  >
                     Start Free Trial
                   </a>
                 </div>
@@ -984,13 +1031,15 @@ export default function Home(){
             {/* https://react-bootstrap.netlify.app/docs/forms/form-control */}
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <div className="flex mt-[60px] ">
-                <Form.Control style={{
+                <Form.Control
+                  style={{
                     borderStyle: "none",
                     backgroundColor: "#F5F5F5",
                     borderRadius: "12px",
                   }}
                   type="text"
-                  placeholder="First Name"/>
+                  placeholder="First Name"
+                />
                 <Form.Control
                   type="text"
                   placeholder="Last Name"
@@ -1031,10 +1080,13 @@ export default function Home(){
               <Form.Control
                 as="textarea"
                 rows={3}
-                placeholder="Message" 
-                style={{borderStyle: "none",
-                backgroundColor: "#F5F5F5",
-                borderRadius: "12px",}}/>
+                placeholder="Message"
+                style={{
+                  borderStyle: "none",
+                  backgroundColor: "#F5F5F5",
+                  borderRadius: "12px",
+                }}
+              />
             </Form.Group>
           </Form>
           <button className="bg-[#5245A6] text-[white] rounded-[15px] border-none py-[8px] px-[170px]">
@@ -1045,8 +1097,7 @@ export default function Home(){
 
       <div className="bg-[#5245A6] mt-[60px] flex pb-[20px]">
         <div>
-          <img
-            src={last} className="w-[227px] h-[49px] mt-[50px] ml-[50px]"/>
+          <img src={last} className="w-[227px] h-[49px] mt-[50px] ml-[50px]" />
           <p className="text-[#FFF] text-[20px] font-semibold ml-[50px] mt-[20px]">
             CONTACT DETAILS :
           </p>
@@ -1066,7 +1117,9 @@ export default function Home(){
           </p>
           <input
             type="email"
-            placeholder="Your email here" className='outline-none border-none bg-[#F5F5F5] rounded-[64px] ml-[400px] py-[8px] px-[13px]'/>
+            placeholder="Your email here"
+            className="outline-none border-none bg-[#F5F5F5] rounded-[64px] ml-[400px] py-[8px] px-[13px]"
+          />
           &emsp;
           <button className="border-none bg-[#F5F5F5] rounded-[64px] py-[8px] px-[13px]">
             Get Free Trial
@@ -1074,13 +1127,13 @@ export default function Home(){
           <p className="text-[#FFF] text-[20px] font-semibold ml-[400px] mt-[50px]">
             Social:
           </p>
-         <div className="flex">
-          <img
-            src={facebook} className="w-[40px] h-[40px] ml-[400px]"/>&emsp;
-          <img
-            src={linkedin} className="w-[40px] h-[40px]"/>&emsp;
-          <img
-            src={twitter} className="w-[40px] h-[40px] "/></div>
+          <div className="flex">
+            <img src={facebook} className="w-[40px] h-[40px] ml-[400px]" />
+            &emsp;
+            <img src={linkedin} className="w-[40px] h-[40px]" />
+            &emsp;
+            <img src={twitter} className="w-[40px] h-[40px] " />
+          </div>
         </div>
       </div>
 
