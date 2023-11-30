@@ -89,7 +89,7 @@ export default function Home(){
 
   return (
     <>
-      <Header />
+      <Header/>
       <div
         className="flex items-center justify-center md:justify-between mt-[50px] mb-[50px] ml-[35px]">
         <div>
