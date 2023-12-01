@@ -44,6 +44,8 @@ import Tick from "../components/Tick";
 import One from "../components/One";
 import Two from "../components/Two";
 import Four from "../components/Four";
+import { Container, HeroBtn, HeroPara, HeroTitle, InnerContainer } from "../styles/HomeStyles";
+
 
 function getItem(label, key, children, type) {
   return {
@@ -90,29 +92,27 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="flex items-center justify-center md:justify-between mt-[50px] mb-[50px] ml-[35px]">
-        <div>
-          <p className="text-[#1B1B1B] text-[42px] font-bold leading-[140%] captilize ">
+      <Container>
+        <InnerContainer>
+          <HeroTitle>
             Monitor and track Real-time
             <br />
             online price insights.
-          </p>
-          <p className="text-[#1B1B1B] text-[16px] font-medium leading-[30px] captilize opacity-70">
+          </HeroTitle>
+          <HeroPara>
             At Metrix IQ, we specialize in monitoring tools that overcome <br />
             manual price-tracking processesacross multiple online
             <br /> platforms.
-          </p>
-          <button
-            className="border-[none] rounded-[108px] bg-[#5245A6] text-[#FFF] capitalize text-[14px] font-semibold
-          inline-flex py-[15px] px-[22px] items-center justify-center gap-[10px]"
+          </HeroPara>
+          <HeroBtn
           >
             Get free Trial
-          </button>
-        </div>
+          </HeroBtn>
+        </InnerContainer>
         <div>
           <img src={rect} className="w-[639px] h-[405px] rounded-[12px] "></img>
         </div>
-      </div>
+      </Container>
 
       <div className="flex justify-between items-center m-[30px]">
         <div className="flex">
