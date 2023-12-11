@@ -44,7 +44,11 @@ import Tick from "../components/Tick";
 import One from "../components/One";
 import Two from "../components/Two";
 import Four from "../components/Four";
-import { Container, HeroBtn, HeroPara, HeroTitle, InnerContainer } from "../styles/HomeStyles";
+import { Box, Boxpara, Container, HeroBtn, HeroPara, HeroTitle, InnerContainer, Para,Boxpara1,Boxpara4,
+  Container1,Container1p, Container1p1,Container1p2,Amazon1, Para1,One1,One1p,One2p,One3p,Img1, Hline, 
+  Time1, Time2, Time1p,Time2p,Time11p,Time22p, Rectangle, Rectangleimg,Rectanglep,Reactangle1p,Reactangle2p,
+   Hline1,Tick1,Two1, Two1p, Two2p, Two3p, Hline2,Rectangle2,Reactangle2img,Reactangle3p, Reactangle4p,Time11,
+   Time3p,Time4p,Time0,Img2,Img2p,Menuimg } from "../styles/HomeStyles";
 
 
 function getItem(label, key, children, type) {
@@ -113,7 +117,6 @@ export default function Home() {
           <img src={rect} className="w-[639px] h-[405px] rounded-[12px] "></img>
         </div>
       </Container>
-
       <div className="flex justify-between items-center m-[30px]">
         <div className="flex">
           <img src={vector} className="w-[21px] h-[32px] m-[10px]" />
@@ -136,7 +139,7 @@ export default function Home() {
             <span className="text-[#444] text-[24px] font-medium">Finder</span>
           </p>
         </div>
-        <div className="flex">
+        <div  className="flex">
           <img src={vector1} className="w-[32px] h-[32px] mt-[2px]" />
           &nbsp;
           <p className="text-[#444] text-[24px] font-bold ">Zoomerr</p>
@@ -183,49 +186,46 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-[#5245A6] w-[1240px] h-[252px] rounded-[30px] flex justify-between items-center m-[20px]">
+      <Box>
         <div className="pl-[20px]" style={{ paddingLeft: "20px" }}>
-          <p className="text-[#FCFCFC] text-[42px] capitalize font-bold">
+          <Boxpara>
             Lorem ipsum dolor sit amet consectetur.{" "}
-          </p>
-          <p className="text-[#FCFCFC] text-[18px] capitalize font-medium opacity-70">
+          </Boxpara>
+          <Boxpara1>
             Lorem ipsum dolor sit amet consectetur. Lorem consectetur.
-          </p>
+          </Boxpara1>
         </div>
         <div>
-          <p className="text-[#FCFCFC] text-[42px] captilize font-bold">4.9</p>
+          <Boxpara4>4.9</Boxpara4>
           <img src={star} className="w-[114px] h-[15px]" />
           <p className="text-[#FCFCFC] text-[18px] captilize font-medium opacity-70">
             Lorem Ipsum
           </p>
         </div>
         <div className="pr-[20px]">
-          <p className="text-[#FCFCFC] text-[42px] font-bold">4.7</p>
+          <Boxpara4>4.7</Boxpara4>
           <img src={star} className="w-[114px] h-[15px]" />
           <p className="text-[#FCFCFC] text-[18px] captilize font-medium opacity-70">
             Lorem ipsum
           </p>
         </div>
-      </div>
+      </Box>
 
-      <div
-        className="rounded-[60px] bg-[#E5E3F2] justify-center items-center flex ml-[20px] 
-      mr-[1140px] py-[-1px] px-[16px] mt-[50px]"
-      >
-        <p className="text-[#5245A6] text-[14px] font-semibold pt-[8px] uppercase text-center">
+      <Container1>
+        <Container1p>
           features
-        </p>
-      </div>
+        </Container1p>
+      </Container1>
 
-      <p className="text-[#444] text-[38px] font-bold capitalize ml-[20px] mt-[5px]">
+      <Container1p1>
         Lorem ipsum dolor sit amet consectetur
-      </p>
-      <p className="text-[#444] text-[18px] font-medium capitalize opacity-70 w-[818px] h-[105px] leading-[30px] ml-[20px] ">
+      </Container1p1>
+      < Container1p2>
         Lorem ipsum dolor sit amet consectetur. Iaculis sed imperdiet viverra
         iaculis morbi euismod vel sollicitudin tortor. Sed vitae vulputate
         maecenas mollis massa integer pretium sed. Sit in nulla imperdiet tempor
         ipsum.
-      </p>
+      </ Container1p2>
 
       <div className="flex ml-[20px] justify-between">
         <div>
@@ -308,7 +308,7 @@ export default function Home() {
         you covered!
       </p>
 
-      <div className="flex justify-evenly items-center">
+      <Amazon1>
         <div>
           <img src={Amazon} className="w-[40px] h-[40px] ml-[130px]" />
           <div className="w-[190px] h-[1px] ml-[60px] mt-[10px] bg-[#4444444D]" />
@@ -380,12 +380,12 @@ export default function Home() {
             </span>
           </button>
         </div>
-      </div>
-      <p className="text-[#444] text-[38px] font-bold ml-[390px] mt-[70px] text-center capitalize w-[528px]">
+      </Amazon1>
+      <Para>
         Lorem ipsum dolor sit amet consectetur dolor sit
-      </p>
+      </Para>
 
-      <div className="flex items-center ml-[320px]">
+      <Para1>
         <div className="rounded-[8px] bg-[#FFF] px-[30px] mr-[20px] shadow-md">
           <p className="text-[#444] text-[28px] font-bold text-center">120%</p>
           <p className="text-[#444] text-[16px] font-medium opacity-70">
@@ -410,125 +410,115 @@ export default function Home() {
             Lorem ipsum
           </p>
         </div>
-      </div>
+      </Para1>
 
       <div className="bg-[#F7F7F7] pt-[1px] mt-[50px] mb-[70px] pb-[35px]">
-        <div className="rounded-[60px] bg-[#E5E3F2] justify-center items-center mt-[70px] ml-[30px] mr-[1090px] p-[1px]">
-          <p className="text-[#5245A6] text-center uppercase text-[14px] pt-[9px] font-semibold">
+        <One1>
+          <One1p>
             Lorem ipsum
-          </p>
-        </div>
-        <p className="text-[#444] text-[38px] ml-[20px] font-bold capitalize">
+          </One1p>
+        </One1>
+        <One2p>
           Lorem ipsum dolor sit
           <br /> amet consectetur
-        </p>
-        <p className="text-[#444] text-[18px] ml-[20px] font-medium capitalize opacity-70">
-          Lorem ipsum dolor sit amet consectetur. Iaculis sed <br />
+        </One2p>
+        <One3p>
+          Lorem ipsum dolor sit amet consectetur. Iaculis sed 
           imperdiet viverra iaculis morbi mollis massa integer pretium
-          <br />
-          sed.Sit in nulla imperdiet tempor ipsum.
-        </p>
-        <div className="h-[1px] w-[490px] bg-[#00000033] ml-[20px] mt-[10px]" />
-        <div className="flex mt-[30px]">
+         sed.Sit in nulla imperdiet tempor ipsum.
+        </One3p>
+        <Hline/>
+        <Time1>
           <div>
             <img src={time} className="w-[64px] h-[64px] ml-[20px]" />
-            <p className="text-[#444] text-[18px] font-medium ml-[20px]">
-              Lorem Ipsum
-            </p>
-            <p className="text-[#444] text-[16px] font-medium opacity-70 leading-[30px] ml-[20px] capitalize">
+            <Time11p>
+              Lorem&nbsp;Ipsum
+            </Time11p>
+            <Time1p>
               Lorem ipsum dolor sit amet consectetur. Iaculis sed viverra
-              <br /> pretium sed.
-            </p>
+               pretium sed.
+            </Time1p>
           </div>
-          <div>
+        <Time2>
             <img src={time} className="w-[64px] h-[64px] ml-[20px]" />
-            <p className="text-[#444] text-[18px] font-medium ml-[20px]">
-              Lorem Ipsum
-            </p>
-            <p className="text-[#444] text-[16px] font-medium opacity-70 leading-[30px] ml-[20px] capitalize">
+            <Time22p>
+              Lorem&nbsp;Ipsum
+            </Time22p>
+            <Time2p>
               Lorem ipsum dolor sit amet consectetur. Iaculis sed viverra
-              <br /> pretium sed.
-            </p>
-          </div>
+              pretium sed.
+            </Time2p>
+          </Time2>
 
-          <img
-            src={rect}
-            className="w-[632px] h-[505px] rounded-[30px] mt-[-230px]"
-          />
-        </div>
+          <Img1
+            src={rect}/>
+        </Time1>
       </div>
 
-      <div className="flex">
+      <Rectangle >
         <div>
-          <img
-            src={Reactangle}
-            className="w-[608px] h-[663px] rounded-[30px] ml-[40px]"
-          />
+          <Rectangleimg
+            src={Reactangle}/>
         </div>
 
         <div>
-          <p
-            className="text-[#5245A6] text-[14px] font-semibold uppercase bg-[#E5E3F2] ml-[50px] mr-[400px] 
-          mt-[30px] rounded-[60px] py-[8px] px-[12px]"
-          >
+          <Rectanglep>
             Lorem Ipsum
-          </p>
-          <p className="text-[#444] text-[38px] font-bold capitalize ml-[50px]">
-            Lorem ipsum dolor sit <br />
+          </Rectanglep>
+          <Reactangle1p>
+            Lorem ipsum dolor sit
             amet consectetur Viverra,
-            <br />
             Imperdiet.
-          </p>
-          <p className="text-[#444] text-[18px] font-medium opacity-70 leading-[30px] capitalize ml-[50px]">
-            Lorem ipsum dolor sit amet consectetur. Iaculis sed <br />
+          </Reactangle1p>
+          <Reactangle2p>
+            Lorem ipsum dolor sit amet consectetur. Iaculis sed
             imperdiet viverra iaculis morbi euismod vel sollicitudin
-            <br /> tortor Sed vitae.
-          </p>
-          <div className="h-[1px] w-[505px] bg-[#00000033] ml-[38px] mt-[10px]" />
-          <div className="flex mt-[30px] ml-[50px]">
+            tortor Sed vitae.
+          </Reactangle2p>
+          <Hline1/>
+          <Tick1>
             <Tick src={tick} />
             &emsp;
             <p className="mr-[30px] mt-[15px]">Lorem ipsum dolor sit</p>
             <Tick src={tick} />
             &emsp;
             <p className="mt-[15px]">Lorem ipsum dolor sit</p>
-          </div>
-          <div className="flex ml-[50px]">
+          </Tick1>
+          <Tick1>
             <Tick src={tick} />
             &emsp;
             <p className="mr-[30px] mt-[15px]">Lorem ipsum dolor sit</p>
             <Tick src={tick} />
             &emsp;
             <p className="mt-[15px]">Lorem ipsum dolor sit</p>
-          </div>
-          <div className="flex ml-[50px]">
+          </Tick1>
+          <Tick1>
             <Tick src={tick} />
             &emsp;
             <p className="mr-[30px] mt-[15px]">Lorem ipsum dolor sit</p>
             <Tick src={tick} />
             &emsp;
             <p className="mt-[15px]">Lorem ipsum dolor sit</p>
-          </div>
+          </Tick1>
         </div>
-      </div>
+      </Rectangle>
 
       <div className="bg-[F7F7F7] pt-[1px] mt-[50px] mb-[70px] pb-[35px]">
-        <div className="rounded-[60px] bg-[#E5E3F2] justify-center items-center mt-[90px] ml-[30px] mr-[1090px] pt-[1px]">
-          <p className="text-[#5245A6] text-center uppercase text-[14px] py-[5px] font-semibold ">
+        <Two1>
+          <Two1p>
             Lorem ipsum
-          </p>
-        </div>
-        <p className="text-[#444] text-[38px] ml-[20px] font-bold capitalize">
+          </Two1p>
+        </Two1>
+        <Two2p>
           Lorem ipsum dolor sit
-          <br /> amet consectetur
-        </p>
-        <p className="text-[#444] text-[18px] ml-[20px] font-medium leading-[30px] opacity-70 capitalize">
-          Lorem ipsum dolor sit amet consectetur. Iaculis sed <br />
+          amet consectetur
+          </Two2p>
+        <Two3p>
+          Lorem ipsum dolor sit amet consectetur. Iaculis sed
           imperdiet viverra iaculis morbi mollis massa integer pretium
-          <br />
-          sed. Sit in nulla imperdiet tempor ipsum.
-        </p>
-        <div className="h-[1px] w-[490px] bg-[#00000033] ml-[20px] mt-[10px]" />
+          sed.Sit in nulla imperdiet tempor ipsum.
+        </Two3p>
+        <Hline2/>
         <p className="text-[#444] text-[28px] ml-[20px] mt-[20px] font-bold">
           25%{" "}
           <span className="text-[16px] font-medium opacity-70">
@@ -547,32 +537,27 @@ export default function Home() {
         />
       </div>
 
-      <div className="flex">
+      <Rectangle2>
         <div>
-          <img
-            src={Reactangle1}
-            className="w-[580px] h-[473px] ml-[40px] rounded-[30px]"
-          />
+          <Reactangle2img
+            src={Reactangle1}/>
         </div>
 
         <div>
-          <p
-            className="text-[#5245A6] text-[14px] font-semibold uppercase bg-[#E5E3F2] ml-[59px] mr-[400px] 
-          mt-[10px] rounded-[60px] py-[9px] px-[30px]"
-          >
+          <Reactangle3p>
             Lorem Ipsum
-          </p>
-          <p className="text-[#444] text-[38px] font-bold capitalize ml-[59px] mt-[10px]">
-            Lorem ipsum dolor sit <br />
+          </Reactangle3p>
+          <Reactangle4p>
+            Lorem ipsum dolor sit 
             amet consectetur{" "}
-          </p>
-          <p className="text-[#444] text-[18px] font-medium opacity-70 leading-[30px] capitalize ml-[59px]">
-            Lorem ipsum dolor sit amet consectetur. Iaculis sed <br />
-            imperdiet viverra iaculis morbi mollis massa integer pretium <br />
+          </Reactangle4p>
+          <Reactangle2p>
+            Lorem ipsum dolor sit amet consectetur. Iaculis sed 
+            imperdiet viverra iaculis morbi mollis massa integer pretium 
             sed. Sit in nulla imperdiet tempor ipsum.
-          </p>
+          </Reactangle2p>
 
-          <div className="flex mt-[30px]">
+          <Time0>
             <div>
               <img
                 src={time}
@@ -581,48 +566,42 @@ export default function Home() {
               <p className="text-[#444] text-[18px] font-medium ml-[63px]">
                 Lorem Ipsum
               </p>
-              <p className="text-[#444] text-[16px] font-medium opacity-70 leading-[30px] capitalize ml-[59px]">
-                Lorem ipsum dolor sit amet <br /> consectetur. Iaculis sed
-                viverra
-                <br /> pretium sed.
-              </p>
+              <Time3p>
+                Lorem ipsum dolor sit amet consectetur. Iaculis sed
+                viverra pretium sed.
+              </Time3p>
             </div>
             <div>
-              <img
-                src={time}
-                className="w-[64px] h-[64px] ml-[30px] mb-[5px]"
-              />
-              <p className="text-[#444] text-[18px] font-medium ml-[30px]">
+              <Img2
+                src={time}/>
+              <Img2p>
                 Lorem Ipsum
-              </p>
-              <p className="text-[#444] text-[16px] font-medium opacity-70 leading-[30px] capitalize ml-[30px]">
-                {" "}
-                Lorem ipsum dolor sit amet <br />
-                consectetur. Iaculis sed viverra
-                <br /> pretium sed.
-              </p>
+              </Img2p>
+              <Time4p>
+                Lorem ipsum dolor sit amet consectetur. Iaculis sed 
+                viverra pretium sed.
+              </Time4p>
             </div>
-          </div>
+          </Time0>
         </div>
-      </div>
+      </Rectangle2>
 
       <div className="bg-[#F7F7F7] pt-[1px] mt-[50px] mb-[70px] pb-[35px]">
-        <div className="rounded-[60px] bg-[#E5E3F2] justify-center items-center mt-[90px] ml-[30px] mr-[1090px] p-[1px]">
-          <p className="text-[#5245A6] text-center uppercase text-[14px] pt-[8px] font-semibold">
+        <Two1>
+          <Two1p>
             Lorem ipsum
-          </p>
-        </div>
-        <p className="text-[#444] text-[38px] ml-[20px] font-bold capitalize">
+          </Two1p>
+        </Two1>
+        <Two2p>
           Lorem ipsum dolor sit
-          <br /> amet consectetur
-        </p>
-        <p className="text-[#444] text-[18px] ml-[20px] font-medium capitalize opacity-70">
-          Lorem ipsum dolor sit amet consectetur. Iaculis sed <br />
+          amet consectetur
+        </Two2p>
+        <Two3p>
+          Lorem ipsum dolor sit amet consectetur. Iaculis sed 
           imperdiet viverra iaculis morbi mollis massa integer pretium
-          <br />
           sed. Sit in nulla imperdiet tempor ipsum.
-        </p>
-        <div className="h-[1px] w-[490px] bg-[#00000033] ml-[20px] mt-[10px]" />
+        </Two3p>
+        <Hline2 />
         <Menu
           mode="inline"
           openKeys={openKeys}
@@ -630,9 +609,8 @@ export default function Home() {
           className="w-[496px] mt-[20px] bg-[#F7F7F7] border-none"
           items={items}
         />
-        <img
+        <Menuimg
           src={Reactangle2}
-          className="w-[632px] h-[505px] roundeed-[30px] ml-[580px] mt-[-420px]"
         />
       </div>
 
