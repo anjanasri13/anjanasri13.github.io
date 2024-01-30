@@ -33,24 +33,39 @@ import facebook from "../assets/img/facebook.png";
 import linkedin from "../assets/img/linkedin.png";
 import twitter from "../assets/img/twitter.png";
 import { Link } from "react-router-dom";
-import { Menu } from "antd";
+
 import Form from "react-bootstrap/Form";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { faCircleChevronRight } from '@fortawesome/free-solid-svg-icons';
+
 import {
-  IoIosArrowForward,
-  IoIosArrowDropleft,
-  IoIosArrowDroprightCircle,
+  IoIosArrowForward
 } from "react-icons/io";
 import Tick from "../components/Tick";
 import One from "../components/One";
 import Two from "../components/Two";
 import Four from "../components/Four";
-import { Box, Boxpara, Container, HeroBtn, HeroPara, HeroTitle, InnerContainer, Para,Boxpara1,Boxpara4,
-  Container1,Container1p, Container1p1,Container1p2,Amazon1, Para1,One1,One1p,One2p,One3p,Img1, Hline, 
+import Three from "../components/Three";
+import Five from "../components/Five";
+import Svn from "../components/Svn";
+import Form1 from "../components/Form";
+import { Box, Boxpara, Container, HeroBtn, HeroPara, HeroTitle, InnerContainer, Para,Boxpara1,Boxpara4,Boxpara5,Boxp,Star,Star1,Boxp1,Img3,Waves,Waves1,
+  Wavesp,Wavesimg,Container1,Container1p, Container1p1,Container1p2,Pricing,Pricing1,Amazon1,Amazonimg,Line,Amazonp,Flipimg,Para1,One1,One1p,One2p,One3p,Img1, Hline, 
   Time1, Time2, Time1p,Time2p,Time11p,Time22p, Rectangle, Rectangleimg,Rectanglep,Reactangle1p,Reactangle2p,
    Hline1,Tick1,Two1, Two1p, Two2p, Two3p, Hline2,Rectangle2,Reactangle2img,Reactangle3p, Reactangle4p,Time11,
-   Time3p,Time4p,Time0,Img2,Img2p,Menuimg } from "../styles/HomeStyles";
-
-
+   Time3p,Time4p,Time0,Img2,Img2p,Menuimg,Div1, Div1p,Div2p, Div1img, Div1img1,Test,Textp,Testblox,Menudiv,
+  Divpricing,Divservices,Divpricingp,Pp,Ppp,Divpp,Divform,Last,News,Input,Button,Social,Icons,Final,Finalp, Artimg, Zoo, Kon, Smart, Artp, Artimg1, Div2, Div2img, Two11p, Div3, Reactangle5p, Icon, Menu1, Wavesimg1, BoxT, One1C, Divp1, Divp2,Four0, Four1, Four2, Four3, Six, Cryimg, Sixbu, Flipline, Flipp, Six2, Flipbu, Noonimg, Noonline, Noonp, Cryline, Cryp, Noonbu, Crybu, Para2, Para3, Time1img, Div4, ResContent1, ResContent2, Tickp, Tickp1, Hline2div, Hline2div1, Hline2div1p, Hline2div1pp, Rectangle21, Rectangle22, Flex, Flexbu, Flexp, Containerdiv, Div41, Img4, Div5, DIv6p, Div6p, Div6pp, Div51, Menudiv1, Divpricingpp, Formdiv, Formdiv1, Formbu, Contact, Lastp, Smartp, Zoop,Konp, Span, Span1} from "../styles/HomeStyles";
+import For from "../components/Four";
+import Menu from "../components/Menu";
+import Menu4 from "../components/Menu";
+import Form5 from "../components/Form";
+import Accordion from "../components/Accordian";
+import Accordion1 from "../components/Accordian";
+import Carousel from 'better-react-carousel'
+import Coursedata from '../components/Test'
+import Test1 from "../components/Test";
+import styled from "styled-components";
 function getItem(label, key, children, type) {
   return {
     key,
@@ -82,6 +97,17 @@ const items = [
 
 const rootSubmenuKeys = ["sub1", "sub2", "sub4"];
 
+const StyledCarousel = styled(Carousel)`
+  display: flex;
+  grid-template-columns: 4fr; /* Single column for mobile devices */
+  align-items:centre;
+  justify-content:centre;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets and larger */
+  }
+`;
+
 export default function Home() {
   const [openKeys, setOpenKeys] = useState(["sub1"]);
   const onOpenChange = (keys) => {
@@ -93,20 +119,71 @@ export default function Home() {
     }
   };
 
+  const Coursedata = [
+    {
+     
+      img: vector2,
+      title:"Lorem ipsum dolor sit amet consectetur.Cursus mauris nisi elementum adipiscing fringilla  nunc praesent. Lorem nunc dignissim maecenas nec at nulla.",
+      title1:"Adam Smith",
+      title2:"General Manager",
+      img1:ellipse2,
+    },
+    {
+     
+      img: vector2,
+      title:"Lorem ipsum dolor sit amet consectetur.Cursus mauris nisi elementum adipiscing fringilla  nunc praesent. Lorem nunc dignissim maecenas nec at nulla.",
+      title1:"Sara",
+      title2:"Assistant Manager",
+      img1:ellipse2,
+    },
+    {
+     
+      img: vector2,
+      title:"Lorem ipsum dolor sit amet consectetur.Cursus mauris nisi elementum adipiscing fringilla  nunc praesent. Lorem nunc dignissim maecenas nec at nulla.",
+      title1:"Andriya",
+      title2:"General Reporter",
+      img1:ellipse2,
+    },
+    {
+     
+      img: vector2,
+      title:"Lorem ipsum dolor sit amet consectetur.Cursus mauris nisi elementum adipiscing fringilla  nunc praesent. Lorem nunc dignissim maecenas nec at nulla.",
+      title1:"Adam Zamba",
+      title2:"Manager",
+      img1:ellipse2,
+    },
+    {
+     
+      img: vector2,
+      title:"Lorem ipsum dolor sit amet consectetur.Cursus mauris nisi elementum adipiscing fringilla  nunc praesent. Lorem nunc dignissim maecenas nec at nulla.",
+      title1:"Adam Smith",
+      title2:"General Manager",
+      img1:ellipse2,
+    },
+    {
+     
+      img: vector2,
+      title:"Lorem ipsum dolor sit amet consectetur.Cursus mauris nisi elementum adipiscing fringilla  nunc praesent. Lorem nunc dignissim maecenas nec at nulla.",
+      title1:"Sara",
+      title2:"Assistant Manager",
+      img1:ellipse2,
+    },
+  ]
+
   return (
     <>
       <Header />
+      <div style={{display: "flex", alignItems: "center", justifyContent: "center",  flexDirection: "column", width: "100%"}}>
       <Container>
         <InnerContainer>
           <HeroTitle>
             Monitor and track Real-time
-            <br />
             online price insights.
           </HeroTitle>
           <HeroPara>
-            At Metrix IQ, we specialize in monitoring tools that overcome <br />
+            At Metrix IQ, we specialize in monitoring tools that overcome 
             manual price-tracking processesacross multiple online
-            <br /> platforms.
+            platforms.
           </HeroPara>
           <HeroBtn
           >
@@ -114,109 +191,108 @@ export default function Home() {
           </HeroBtn>
         </InnerContainer>
         <div>
-          <img src={rect} className="w-[639px] h-[405px] rounded-[12px] "></img>
+          <img src={rect} className="w-[100%] h-[100%] rounded-[12px] "></img>
         </div>
       </Container>
-      <div className="flex justify-between items-center m-[30px]">
+
+    <Waves1>
+      <Waves>
         <div className="flex">
-          <img src={vector} className="w-[21px] h-[32px] m-[10px]" />
-          <p className="text-[#444] text-[18px] font-bold mt-[15px]">
+          <Wavesimg1 src={vector}  />
+          <Wavesp>
             WAVES
-            <span className="text-[#444] text-[18px] font-normal">
+            <Span>
               MARATHON
-            </span>
-          </p>
+            </Span>
+          </Wavesp>
         </div>
         <div className="flex">
-          <img src={group46} className="w-[55px] h-[32px] mt-[5px] ml-[15px]" />
-          &emsp;
-          <p className="text-[#444] text-[24px] font-bold ">ArtVenue</p>
+          <Artimg1 src={group46}  />
+          <Artp>ArtVenue</Artp>
         </div>
         <div className="flex">
-          <img src={group45} className="w-[55px] h-[32px] m-[10px]" />
-          <p className="text-[#444] text-[24px] font-bold ">
+          <Smart src={group45} />
+          <Smartp>
             Smart
-            <span className="text-[#444] text-[24px] font-medium">Finder</span>
-          </p>
+            <Span1>Finder</Span1>
+          </Smartp>
         </div>
         <div  className="flex">
-          <img src={vector1} className="w-[32px] h-[32px] mt-[2px]" />
-          &nbsp;
-          <p className="text-[#444] text-[24px] font-bold ">Zoomerr</p>
+          <Zoo src={vector1}/>
+          <Zoop>Zoomerr</Zoop>
         </div>
         <div className="flex">
-          <img src={group47} className="w-[23px] h-[29px] m-[15px] mt-[7px]" />
-          <p className="text-[#444] text-[24px] font-bold ">kontrastr</p>
+          <Kon src={group47} />
+          <Konp>kontrastr</Konp>
         </div>
-      </div>
+      </Waves>
 
-      <div className="flex justify-between items-center m-[30px]">
+      <Waves>
         <div className="flex">
-          <img src={vector} className="w-[21px] h-[32px] m-[10px]" />
-          <p className="text-[#444] text-[18px] font-bold mt-[15px]">
+          <Wavesimg src={vector}  />
+          <Wavesp>
             WAVES
-            <span className="text-[#444] text-[18px] font-normal">
+            <Span>
               MARATHON
-            </span>
-          </p>
+            </Span>
+          </Wavesp>
         </div>
         <div className="flex">
-          <img src={group46} className="w-[55px] h-[32px] m-[10px]" />
-          &nbsp;
-          <p className="text-[#444] text-[24px] font-bold mt-[3px] ">
+          <Artimg src={group46}  />
+          <Artp>
             ArtVenue
-          </p>
+          </Artp>
         </div>
         <div className="flex">
-          <img src={group45} className="w-[55px] h-[32px] m-[10px] mr-[3px]" />
-          &nbsp;
-          <p className="text-[#444] text-[24px] font-bold ">
+          <Smart src={group45} />
+          <Smartp>
             Smart
-            <span className="text-[#444] text-[24px] font-medium">Finder</span>
-          </p>
+            <Span1>Finder</Span1>
+          </Smartp>
         </div>
         <div className="flex">
-          <img src={vector1} className="w-[32px] h-[32px] mt-[4px] ml-[5px]" />
-          &nbsp;
-          <p className="text-[#444] text-[24px] font-bold">Zoomerr</p>
+          <Zoo src={vector1} />
+          <Zoop>Zoomerr</Zoop>
         </div>
         <div className="flex">
-          <img src={group47} className="w-[23px] h-[29px] m-[15px] mt-[7px]" />
-          <p className="text-[#444] text-[24px] font-bold ">kontrastr</p>
+          <Kon src={group47}  />
+          <Konp>kontrastr</Konp>
         </div>
-      </div>
+      </Waves>
+      </Waves1>
+
 
       <Box>
-        <div className="pl-[20px]" style={{ paddingLeft: "20px" }}>
+        <div>
           <Boxpara>
-            Lorem ipsum dolor sit amet consectetur.{" "}
+            Lorem ipsum dolor sit amet consectetur.
           </Boxpara>
           <Boxpara1>
             Lorem ipsum dolor sit amet consectetur. Lorem consectetur.
           </Boxpara1>
         </div>
-        <div>
+        <BoxT>
+        <div style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: "100%"}}>
           <Boxpara4>4.9</Boxpara4>
-          <img src={star} className="w-[114px] h-[15px]" />
-          <p className="text-[#FCFCFC] text-[18px] captilize font-medium opacity-70">
+          <Star src={star}/>
+          <Boxp>
             Lorem Ipsum
-          </p>
+          </Boxp>
         </div>
-        <div className="pr-[20px]">
-          <Boxpara4>4.7</Boxpara4>
-          <img src={star} className="w-[114px] h-[15px]" />
-          <p className="text-[#FCFCFC] text-[18px] captilize font-medium opacity-70">
+        <div style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: "100%"}}>
+          <Boxpara5>4.8</Boxpara5>
+          <Star1 src={star}/>
+          <Boxp1>
             Lorem ipsum
-          </p>
-        </div>
+          </Boxp1>
+        </div></BoxT>
       </Box>
 
-      <Container1>
+    <Containerdiv>
         <Container1p>
           features
         </Container1p>
-      </Container1>
-
+      
       <Container1p1>
         Lorem ipsum dolor sit amet consectetur
       </Container1p1>
@@ -227,13 +303,13 @@ export default function Home() {
         ipsum.
       </ Container1p2>
 
-      <div className="flex ml-[20px] justify-between">
+      <Pricing>
         <div>
           <img src={dollar} className="w-[64px] h-[64px]" />
           <Two>Dynamic Market Pricing</Two>
           <One>
             In the e-commerce world, prices are subject to
-            <br /> constant fluctuations due to factors like demand, supply,
+             constant fluctuations due to factors like demand, supply,
             competition, and seasonality. Keeping track&nbsp; of these changes
             and adjusting prices accordingly can be an arduous and
             time-consuming process.
@@ -242,185 +318,202 @@ export default function Home() {
         <div>
           <img src={com} className="w-[64px] h-[64px]" />
           <Two>Competitive Pricing</Two>
-          <One>
-            Staying competitive is essential, and Metrics IQ <br />
+          <One1C>
+            Staying competitive is essential, and Metrics IQ
             addresses the challenge of regularly monitoring and adjusting prices
             to ensure they align with or undercut competitors. This is
             especially crucial for industries with high levels of price
             sensitivity.
-          </One>
+          </One1C>
         </div>
         <div>
           <img src={data} className="w-[64px] h-[64px]" />
           <Two>Data Analysis and Insights</Two>
-          <One>
+          <Three>
             Metrics IQ leverages data analytics and algorithms to provide
             businesses with valuable insights into pricing strategies. It can
             analyze historical data, competitor pricing, and market trends to
             make informed recommendations.
-          </One>
+          </Three>
         </div>
-      </div>
-      <div className="flex ml-[20px] justify-evenly mt-[20px]">
+      </Pricing>
+      <Pricing>
         <div>
-          <img src={time} className="w-[64px] h-[64px]" />
+          <img src={time} className="w-[64px] h-[64px]"/>
           <Two>Time Efficiency</Two>
-          <One>
+          <Five>
             Manually adjusting prices across a vast product catalog is
             time-consuming and prone to errors. Metrics IQ automates this
             process, saving retailers time and ensuring consistency.
-          </One>
+          </Five>
         </div>
-        <div className="ml-[50px]">
+        <Pricing1>
           <img src={error} className="w-[64px] h-[64px]" />
           <Two>Pricing Errors</Two>
-          <One>
+          <Five>
             Human errors in pricing can result in revenue losses or customer
             dissatisfaction. Metrics IQ reduces the risk of such errors by
             relying on algorithms and data analysis.
-          </One>
-        </div>
-        <div className="ml-[70px]">
+          </Five>
+        </Pricing1>
+        <Pricing1>
           <img src={customer} className="w-[64px] h-[64px]" />
           <Two>Customer Experience</Two>
-          <One>
+          <Svn>
             Consistently offering competitive prices contributes to an improved
             customer experience. It helps in building trust and brand loyalty,
             as customers are more likely to return to retailers that
             consistently offer fair prices
-          </One>
-        </div>
-      </div>
-      <div className="rounded-[60px] bg-[#E5E3F2] justify-center items-center flex ml-[580px] mr-[580px] mt-[70px]">
-        <p className="text-[#5245A6] text-[14px] font-semibold pt-[5px] uppercase text-center">
-          Services
-        </p>
-      </div>
-      <p className="text-[#444] text-[38px] font-bold text-center capitalize m-[6px]">
+          </Svn>
+        </Pricing1>
+      </Pricing>
+   </Containerdiv>
+
+    <div style={{display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", gap: 10}}>
+      <Divservices>
+           Services
+       </Divservices>
+      <Divp1>
         Pricing Tracking for Various E-commerce Sites
-      </p>
-      <p className="text-[#444] text-[18px] font-normal text-center capitalize opacity-70 leading-[30px] w-full h-[105px]">
+      </Divp1>
+      <Divp2 >
         Are you a great shopper looking for the best deals or a business owner
         seeking to analyze
-        <br /> market competitiveness? Metrics IQ, the ultimate automatic online
+        market competitiveness? Metrics IQ, the ultimate automatic online
         price tracker tool, has got
-        <br />
+       
         you covered!
-      </p>
+      </Divp2>
 
       <Amazon1>
-        <div>
-          <img src={Amazon} className="w-[40px] h-[40px] ml-[130px]" />
-          <div className="w-[190px] h-[1px] ml-[60px] mt-[10px] bg-[#4444444D]" />
-          <p className="text-[#444] text-[24px] font-semibold capitalize ml-[110px]">
+        <div style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center",gap:5}}>
+          <Amazonimg src={Amazon} />
+          <Line />
+          <Amazonp>
             Amazon
-          </p>
-          <Four>
-            Effortlessly track Amazon <br /> prices with accurate <br />
+          </Amazonp>
+          <Six>
+            Effortlessly track Amazon  prices with accurate 
             historical data.
-          </Four>
-          <button className="flex text-[#2699D8] text-[18px] font-semibold capitalize ml-[110px]">
+          </Six>
+          <div className="flex">
+          <Sixbu >
             View More &nbsp;
-            <span className="mt-[8px] ">
+            
+          </Sixbu>
+          <p className="mt-[8px] text-[#2699D8]">
               <BsArrowRight />
-            </span>
-          </button>
+            </p>
+          </div>
         </div>
-        <div>
-          <img src={flipkart} className="w-[40px] h-[40px] ml-[130px]" />
-          <div className="w-[190px] h-[1px] ml-[60px] mt-[10px] bg-[#4444444D]" />
-          <p className="text-[#444] text-[24px] font-semibold capitalize ml-[110px]">
+        <div style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center",gap:5}}>
+          <Flipimg src={flipkart}  />
+          <Flipline/>
+          <Flipp >
             Flipkart
-          </p>
-          <Four>
+          </Flipp>
+          <Six2>
             Stay updated on Flipkart prices
-            <br /> with comprehensive price <br />
+           with comprehensive price 
             history.
-          </Four>
-          <button className="flex text-[#2699D8] text-[18px] font-semibold capitalize ml-[110px]">
-            View More &nbsp;{" "}
-            <span className="mt-[8px] ">
-              <BsArrowRight />
-            </span>
-          </button>
-        </div>
-        <div>
-          <img src={noon} className="w-[40px] h-[40px] ml-[130px]" />
-          <div className="w-[190px] h-[1px] ml-[60px] mt-[10px] bg-[#4444444D]" />
-          <p className="text-[#444] text-[24px] font-semibold capitalize ml-[120px]">
-            Noon
-          </p>
-          <Four>
-            Stay updated on Noon prices
-            <br /> with comprehensive price
-            <br /> history.
-          </Four>
-          <button className="flex text-[#2699D8] text-[18px] font-semibold capitalize ml-[110px]">
-            View More &nbsp;{" "}
-            <span className="mt-[8px] ">
-              <BsArrowRight />
-            </span>
-          </button>
-        </div>
-        <div>
-          <img src={fc} className="w-[40px] h-[40px] ml-[130px]" />
-          <div className="w-[190px] h-[1px] ml-[60px] mt-[10px] bg-[#4444444D]" />
-          <p className="text-[#444] text-[24px] font-semibold capitalize ml-[120px]">
-            FirstCry
-          </p>
-          <Four>
-            Stay updated on FirstCry prices <br />
-            with comprehensive price
-            <br /> history.
-          </Four>
-          <button className="flex text-[#2699D8] text-[18px] font-semibold capitalize ml-[110px]">
+          </Six2>
+          <div className="flex">
+          <Flipbu >
             View More &nbsp;
-            <span className="mt-[8px]">
+            
+          </Flipbu>
+          <p className="mt-[8px] text-[#2699D8]">
               <BsArrowRight />
-            </span>
-          </button>
+            </p>
+          </div>
+        </div>
+        <div style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center",gap:5}}>
+          <Noonimg src={noon}  />
+          <Noonline />
+          <Noonp >
+            Noon
+          </Noonp>
+          <Four2>
+            Stay updated on Noon prices
+           with comprehensive price
+             history.
+          </Four2>
+          <div className="flex">
+          <Noonbu >
+            View More &nbsp;
+            
+          </Noonbu>
+          <p className="mt-[8px] text-[#2699D8]">
+              <BsArrowRight />
+            </p>
+          </div>
+        </div>
+        <div style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center",gap:5}}>
+          <Cryimg src={fc}  />
+          <Cryline />
+          <Cryp>
+            FirstCry
+          </Cryp>
+          <Four3>
+            Stay updated on FirstCry prices
+            with comprehensive price
+             history.
+          </Four3>
+          <div className="flex">
+          <Crybu >
+            View More &nbsp;
+            
+          </Crybu>
+          <p className="mt-[8px] text-[#2699D8]">
+              <BsArrowRight />
+            </p>
+          </div>
         </div>
       </Amazon1>
+    </div>
+
+      <div style={{display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", gap: 20}}>
       <Para>
         Lorem ipsum dolor sit amet consectetur dolor sit
       </Para>
 
       <Para1>
-        <div className="rounded-[8px] bg-[#FFF] px-[30px] mr-[20px] shadow-md">
+        <Para2>
+        <div className="rounded-[8px] bg-[#FFF] px-[20px] mr-[20px] shadow-md">
           <p className="text-[#444] text-[28px] font-bold text-center">120%</p>
-          <p className="text-[#444] text-[16px] font-medium opacity-70">
+          <Para3>
             Lorem ipsum
-          </p>
+          </Para3>
         </div>
-        <div className="rounded-[8px] bg-[#FFF] px-[30px] mr-[20px] shadow-md">
+        <div className="rounded-[8px] bg-[#FFF] px-[20px] mr-[20px] shadow-md">
           <p className="text-[#444] text-[28px] font-bold text-center">430+</p>
-          <p className="text-[#444] text-[16px] font-medium opacity-70">
+          <Para3>
             Lorem ipsum
-          </p>
-        </div>
-        <div className="rounded-[8px] bg-[#FFF] px-[30px] mr-[20px] shadow-md">
-          <p className="text-[#444] text-[28px] font-bold  text-center ">75+</p>
-          <p className="text-[#444] text-[16px] font-medium opacity-70">
+          </Para3>
+        </div></Para2>
+        <Para2>
+        <div className="rounded-[8px] bg-[#FFF] px-[20px] mr-[20px] shadow-md">
+          <p className="text-[#444] text-[28px] font-bold  text-center ">85+</p>
+          <Para3>
             Lorem ipsum
-          </p>
+          </Para3>
         </div>
-        <div className="rounded-[8px] bg-[#FFF] px-[30px] mr-[20px] shadow-md">
+        <div className="rounded-[8px] bg-[#FFF] px-[20px] mr-[20px] shadow-md">
           <p className="text-[#444] text-[28px] font-bold text-center">99%</p>
-          <p className="text-[#444] text-[16px] font-medium opacity-70">
+          <Para3>
             Lorem ipsum
-          </p>
-        </div>
+          </Para3>
+        </div></Para2>
       </Para1>
+      </div>
 
-      <div className="bg-[#F7F7F7] pt-[1px] mt-[50px] mb-[70px] pb-[35px]">
-        <One1>
-          <One1p>
-            Lorem ipsum
-          </One1p>
-        </One1>
+
+    <Div4>
+      <Div41>
+          <One1p>Lorem ipsum</One1p>
+        
         <One2p>
-          Lorem ipsum dolor sit
-          <br /> amet consectetur
+          Lorem ipsum dolor sit amet consectetur
         </One2p>
         <One3p>
           Lorem ipsum dolor sit amet consectetur. Iaculis sed 
@@ -430,7 +523,7 @@ export default function Home() {
         <Hline/>
         <Time1>
           <div>
-            <img src={time} className="w-[64px] h-[64px] ml-[20px]" />
+            <Time1img src={time} />
             <Time11p>
               Lorem&nbsp;Ipsum
             </Time11p>
@@ -439,8 +532,8 @@ export default function Home() {
                pretium sed.
             </Time1p>
           </div>
-        <Time2>
-            <img src={time} className="w-[64px] h-[64px] ml-[20px]" />
+          <Time2>
+            <img src={time} className="w-[64px] h-[64px]" />
             <Time22p>
               Lorem&nbsp;Ipsum
             </Time22p>
@@ -449,21 +542,23 @@ export default function Home() {
               pretium sed.
             </Time2p>
           </Time2>
-
-          <Img1
-            src={rect}/>
         </Time1>
+      </Div41>
+      <div>
+            <Img1
+              src={Reactangle2}/>
       </div>
+    </Div4>
 
-      <Rectangle >
-        <div>
+      <Rectangle>
+        <ResContent2>
           <Rectangleimg
             src={Reactangle}/>
-        </div>
+        </ResContent2>
 
-        <div>
+        <ResContent1>
           <Rectanglep>
-            Lorem Ipsum
+             Lorem Ipsum
           </Rectanglep>
           <Reactangle1p>
             Lorem ipsum dolor sit
@@ -477,93 +572,98 @@ export default function Home() {
           </Reactangle2p>
           <Hline1/>
           <Tick1>
-            <Tick src={tick} />
-            &emsp;
-            <p className="mr-[30px] mt-[15px]">Lorem ipsum dolor sit</p>
-            <Tick src={tick} />
-            &emsp;
-            <p className="mt-[15px]">Lorem ipsum dolor sit</p>
+            <Tick/>
+      
+            <Tickp>Lorem ipsum dolor sit</Tickp>
+            <Tick/>
+           
+            <Tickp1>Lorem ipsum dolor sit</Tickp1>
           </Tick1>
           <Tick1>
             <Tick src={tick} />
-            &emsp;
-            <p className="mr-[30px] mt-[15px]">Lorem ipsum dolor sit</p>
+         
+            <Tickp>Lorem ipsum dolor sit</Tickp>
             <Tick src={tick} />
-            &emsp;
-            <p className="mt-[15px]">Lorem ipsum dolor sit</p>
+         
+            <Tickp1>Lorem ipsum dolor sit</Tickp1>
           </Tick1>
           <Tick1>
             <Tick src={tick} />
-            &emsp;
-            <p className="mr-[30px] mt-[15px]">Lorem ipsum dolor sit</p>
+           
+            <Tickp>Lorem ipsum dolor sit</Tickp>
             <Tick src={tick} />
-            &emsp;
-            <p className="mt-[15px]">Lorem ipsum dolor sit</p>
+          
+            <Tickp1>Lorem ipsum dolor sit</Tickp1>
           </Tick1>
-        </div>
+        </ResContent1>
       </Rectangle>
 
-      <div className="bg-[F7F7F7] pt-[1px] mt-[50px] mb-[70px] pb-[35px]">
-        <Two1>
-          <Two1p>
+      {/* <div className="bg-[F7F7F7] pt-[1px] mt-[50px] mb-[70px] pb-[35px] "> */}
+    <Div3>
+      <Div41>
+          <Two1>
             Lorem ipsum
-          </Two1p>
-        </Two1>
+          </Two1>
+        
+        <Two11p>
+          Lorem ipsum dolor sit amet consectetur
+        </Two11p>
         <Two2p>
-          Lorem ipsum dolor sit
-          amet consectetur
-          </Two2p>
-        <Two3p>
           Lorem ipsum dolor sit amet consectetur. Iaculis sed
           imperdiet viverra iaculis morbi mollis massa integer pretium
           sed.Sit in nulla imperdiet tempor ipsum.
-        </Two3p>
+        </Two2p>
         <Hline2/>
-        <p className="text-[#444] text-[28px] ml-[20px] mt-[20px] font-bold">
-          25%{" "}
-          <span className="text-[16px] font-medium opacity-70">
-            Lorem Ipsum
-          </span>
-        </p>
-        <p className="text-[#444] text-[28px] ml-[20px]  font-bold">
-          1.7X{" "}
-          <span className="text-[16px] font-medium opacity-70">
-            Lorem Ipsum
-          </span>
-        </p>
-        <img
-          src={rect}
-          className="w-[632px] h-[505px] rounded-[30px] ml-[580px] mt-[-350px]"
-        />
-      </div>
+        <Hline2div>
+          <Hline2div1>
+               <Hline2div1pp >
+                  25%</Hline2div1pp>
+               <Hline2div1p >
+                  Lorem Ipsum</Hline2div1p>
+                
+          </Hline2div1>
+          <Hline2div1>
+                <Hline2div1pp >
+                  1.7X</Hline2div1pp>
+               <Hline2div1p >
+                  Lorem Ipsum</Hline2div1p>
+          </Hline2div1>
+        </Hline2div>
+      </Div41>
+        <div>
+          <Div2img
+          src={Reactangle2}
+         
+        /></div>
+    </Div3>
 
       <Rectangle2>
-        <div>
+        <Rectangle22>
           <Reactangle2img
             src={Reactangle1}/>
-        </div>
+        </Rectangle22>
 
-        <div>
+        <Rectangle21>
           <Reactangle3p>
             Lorem Ipsum
           </Reactangle3p>
           <Reactangle4p>
             Lorem ipsum dolor sit 
-            amet consectetur{" "}
+            amet consectetur
           </Reactangle4p>
-          <Reactangle2p>
+          <Reactangle5p>
             Lorem ipsum dolor sit amet consectetur. Iaculis sed 
             imperdiet viverra iaculis morbi mollis massa integer pretium 
             sed. Sit in nulla imperdiet tempor ipsum.
-          </Reactangle2p>
+          </Reactangle5p>
 
           <Time0>
             <div>
               <img
                 src={time}
-                className="w-[64px] h-[64px] ml-[60px] mb-[5px]"
+                className="w-[64px] h-[64px] mb-[5px]"
               />
-              <p className="text-[#444] text-[18px] font-medium ml-[63px]">
+              <p className="text-[#444] text-[18px] font-medium ">
                 Lorem Ipsum
               </p>
               <Time3p>
@@ -583,255 +683,158 @@ export default function Home() {
               </Time4p>
             </div>
           </Time0>
-        </div>
+        </Rectangle21>
       </Rectangle2>
 
-      <div className="bg-[#F7F7F7] pt-[1px] mt-[50px] mb-[70px] pb-[35px]">
-        <Two1>
-          <Two1p>
-            Lorem ipsum
-          </Two1p>
-        </Two1>
-        <Two2p>
-          Lorem ipsum dolor sit
-          amet consectetur
-        </Two2p>
-        <Two3p>
+      <Div2>
+        <Div41>
+            <Two1>Lorem ipsum</Two1>
+            <Two11p>Lorem ipsum dolor sit amet consectetur</Two11p>
+            <Two3p>
           Lorem ipsum dolor sit amet consectetur. Iaculis sed 
           imperdiet viverra iaculis morbi mollis massa integer pretium
           sed. Sit in nulla imperdiet tempor ipsum.
-        </Two3p>
-        <Hline2 />
-        <Menu
-          mode="inline"
-          openKeys={openKeys}
-          onOpenChange={onOpenChange}
-          className="w-[496px] mt-[20px] bg-[#F7F7F7] border-none"
-          items={items}
-        />
-        <Menuimg
+            </Two3p>
+           <Hline2 />  
+
+            <Menu4/>
+            <Menu4/>
+            <Menu4/>
+        </Div41>
+        <div>
+          <Div2img
           src={Reactangle2}
+          
         />
-      </div>
+        </div>
+      </Div2>
 
-      <div className="flex justify-between bg-[#5245A6] rounded-[14px] ml-[50px] mr-[50px] pb-[30px]">
-        <div>
-          <p className="text-[#FFFFFF] text-[38px] font-bold ml-[40px] pt-[40px]">
-            {" "}
-            Lorem Ipsum Dolor Sit Amet <br /> Consectetur
-          </p>
-          <p className="text-[#FFFFFF] text-[16px] font-medium ml-[40px] opacity-70 capitalize">
-            Lorem ipsum dolor sit amet consectetur. Iaculis sed <br />
-            imperdiet viverra iaculis morbi mollis massa integer pretium <br />
+      <Div1>
+        <div style={{paddingRight: 80}}>
+          <Div1p>
+            Lorem Ipsum Dolor Sit Amet Consectetur
+          </Div1p>
+          <Div2p>
+            Lorem ipsum dolor sit amet consectetur. Iaculis sed 
+            imperdiet viverra iaculis morbi mollis massa integer pretium 
             sed. Sit in nulla imperdiet tempor ipsum.
-          </p>
-          <div className="flex">
-            <button className="text-[18px] bg-[white] font-medium rounded-[130px] border-none py-[10px] px-[35px] ml-[40px]">
-              Get Started{" "}
-            </button>
-            <p className="ml-[-25px] mt-[20px]">
+          </Div2p>
+          <Flex>
+            <Flexbu>
+              Get Started
               <IoIosArrowForward />
-            </p>
-          </div>
-        </div>
+              </Flexbu>
+           </Flex>
 
-        <div>
-          <img
+           {/* <div style={{display: "inline-flex", alignItems: "center", justifyContent: "center", backgroundColor: "white", borderRadius: 30}}>
+            <div style={{display: "flex", alignItems: "center", justifyContent: "center", gap: 10, height: "100%", width: "100%", padding: 10}}>
+            Get Started
+            <IoIosArrowForward />
+            </div>
+           </div> */}
+            {/* <Flexp >
+              <IoIosArrowForward />
+            </Flexp> */}
+         
+        </div>
+        <Img4 >
+
+          <Div1img
             src={Reactangle12440}
-            className="w-[307px] h-[310px] pt-[40px]"
           />
-        </div>
-        <div>
-          <img
+          <Div1img1
             src={Reactangle12440}
-            className="w-[236px] h-[244px] pt-[40px]"
           />
-        </div>
-      </div>
+       </Img4>
+      </Div1>
 
-      <div className="bg-[#F7F7F7] pt-[1px] mt-[50px] mb-[70px] pb-[35px]">
-        <div className="rounded-[60px] bg-[#E5E3F2] pb-[1px] justify-center items-center mt-[90px] ml-[40px] mr-[1090px]">
-          <p className="text-[#5245A6] text-center uppercase text-[14px] pt-[9px] font-semibold">
-            Testimonials
-          </p>
-        </div>
-        <p className="text-[#444] text-[38px] ml-[40px] font-bold capitalize flex">
-          Lorem ipsum dolor sit
-          <br /> amet consectetur{" "}
-          <p className="ml-[550px] mt-[20px] flex">
-            <IoIosArrowDropleft />
+      {/* <div className="bg-[#F7F7F7] pt-[1px] mt-[50px] mb-[70px] pb-[35px]"> */}
+      <Div5>
+      <Div41>
+        <Test>Testimonials</Test>
+       
 
-            <p>
-              <IoIosArrowDroprightCircle />
-            </p>
-          </p>
-        </p>
-        <div className="flex p-[30px] items-start gap-[16px] ml-[20px]">
-          <div className="rounded-[16px] bg-[#FFF] pr-[15px] shadow-md">
-            <img
-              className="w-[20px] h-[19px] mt-[20px] ml-[20px]"
-              src={vector2}
-            />
-            <p className="text-[16px] text-[#444] font-medium ml-[20px] leading-[30px] opacity-70">
-              Lorem ipsum dolor sit amet
-              <br />
-              consectetur.Cursus mauris nisi
-              <br />
-              elementum adipiscing fringilla
-              <br /> nunc praesent. Lorem nunc
-              <br />
-              dignissim maecenas nec at nulla.
-            </p>
-            <div className="flex">
-              <img
-                className="w-[40px] h-[40px] rounded-[40px] ml-[20px]"
-                src={ellipse2}
-              />
-              &emsp;
-              <p className="text-[16px] text-[#444] mt-[3px] font-medium">
-                Adam Smith
-              </p>
-            </div>
-            <p className="text-[14px] text-[#444] mt-[-20px] ml-[75px] font-medium opacity-70">
-              General Manager
-            </p>
-          </div>
+        <Textp>
+          Lorem ipsum dolor sit amet consectetur  
+          {/* <Icon>
+       
+           <FontAwesomeIcon icon={faCircleChevronLeft} />
 
-          <div className="rounded-[16px] bg-[#FFF] pr-[15px] shadow-md">
-            <img
-              className="w-[20px] h-[19px] mt-[20px] ml-[20px]"
-              src={vector2}
-            />
-            <p className="text-[16px] text-[#444] font-medium ml-[20px] leading-[30px] opacity-70">
-              Lorem ipsum dolor sit amet
-              <br />
-              consectetur.Cursus mauris nisi
-              <br />
-              elementum adipiscing fringilla
-              <br /> nunc praesent. Lorem nunc
-              <br />
-              dignissim maecenas nec at nulla.
+            <p className="mt-[-10px] ml-[10px]">
+            <FontAwesomeIcon icon={faCircleChevronRight} />
             </p>
-            <div className="flex">
-              <img
-                className="w-[40px] h-[40px] rounded-[40px] mt-[5px] ml-[20px]"
-                src={ellipse2}
-              />
-              &emsp;
-              <p className="text-[16px] text-[#444] mt-[3px] font-semibold">
-                Sara
-              </p>
-            </div>
-            <p className="text-[14px] text-[#444] font-medium ml-[73px] mt-[-20px] opacity-70">
-              Assistant Manager
-            </p>
-          </div>
+          </Icon> */}
+         </Textp>
+     </Div41>
+         {/* <StyledCarousel> */}
+         <Carousel cols={4} rows={1} gap={10} loop >
+            {Coursedata.map((item, index) => (
+          <Carousel.Item key={index}>
+          <Test1 title={item.title} src={item.img} title1={item.title1} title2={item.title2} src1={item.img1}/>
+         </Carousel.Item>
+        ))}
+         </Carousel>
+      </Div5>
 
-          <div className="rounded-[16px] bg-[#FFF] pr-[15px] shadow-md">
-            <img
-              className="w-[20px] h-[19px] mt-[20px] ml-[20px]"
-              src={vector2}
-            />
-            <p className="text-[16px] text-[#444] font-medium ml-[20px] leading-[30px] opacity-70">
-              Lorem ipsum dolor sit amet
-              <br />
-              consectetur.Cursus mauris nisi
-              <br />
-              elementum adipiscing fringilla
-              <br /> nunc praesent. Lorem nunc
-              <br />
-              dignissim maecenas nec at nulla.
-            </p>
-            <div className="flex">
-              <img
-                className="w-[40px] h-[40px] rounded-[40px] ml-[20px]"
-                src={ellipse2}
-              />
-              &emsp;
-              <p className="text-[16px] text-[#444] mt-[3px] font-semibold">
-                Andriya
-              </p>
-            </div>
-            <p className="text-[14px] text-[#444] font-medium ml-[75px] mt-[-20px] opacity-70">
-              General Reporter
-            </p>
-          </div>
-
-          <div className="rounded-[16px] bg-[#FFF] pr-[15px] shadow-md">
-            <img
-              className="w-[20px] h-[19px] mt-[20px] ml-[20px]"
-              src={vector2}
-            />
-            <p className="text-[16px] text-[#444] font-medium ml-[20px] leading-[30px] opacity-70">
-              Lorem ipsum dolor sit amet
-              <br />
-              consectetur.Cursus mauris nisi
-              <br />
-              elementum adipiscing fringilla
-              <br /> nunc praesent. Lorem nunc
-              <br />
-              dignissim maecenas nec at nulla.
-            </p>
-            <div className="flex">
-              <img
-                className="w-[40px] h-[40px] rounded-[40px] ml-[20px]"
-                src={ellipse2}
-              />
-              &emsp;
-              <p className="text-[16px] text-[#444] mt-[3px] font-medium">
-                Adam Zamba
-              </p>
-            </div>
-            <p className="text-[14px] text-[#444] font-medium ml-[75px] mt-[-20px] opacity-70">
-              Manager
-            </p>
-          </div>
-        </div>
-      </div>
-      <p className="text-[#1B1B1B] text-[38px] font-bold ml-[40px]">
+   <Div2>
+      <Div41>
+        <Div6p>
         Lorem Ipsum Dolor Sit Amet
-      </p>
-      <p className="text-[#49454F] text-[18px] font-medium capitalize ml-[40px]">
+      </Div6p>
+      <Div6pp >
         Lorem ipsum dolor sit amet ipsum dolor sit amet
-      </p>
-      <div className="flex justify-evenly">
+      </Div6pp>
+      <Menudiv1>
         <div>
-          <Menu
-            mode="inline"
-            openKeys={openKeys}
-            onOpenChange={onOpenChange}
-            className="w-[576px] mt-[20px] bg-[#F7F7F7] border-none rounded-[20px]"
-            items={items}
-          />
-        </div>
-        <div>
-          <Menu
-            mode="inline"
-            openKeys={openKeys}
-            onOpenChange={onOpenChange}
-            className="w-[576px] mt-[20px] bg-[#F7F7F7] border-none rounded-[20px]"
-            items={items}
-          />
-        </div>
-      </div>
+         <Accordion1/>
+         <Accordion1/>
+         <Accordion1/>
+         <Accordion1/>
+         </div>
+         <div>
+         <Accordion1/>
+         <Accordion1/>
+         <Accordion1/>
+         <Accordion1/>
+         </div>
+      </Menudiv1>
 
-      <div className="rounded-[60px] bg-[#5245A626] pb-[1px] justify-center items-center mt-[90px] ml-[580px] mr-[580px]">
-        <p className="text-[#5245A6] text-[14px] font-semibold ml-[23px] pt-[8px]">
-          PRICING
-        </p>
-      </div>
-      <p className="text-[40px] font-bold capitalize text-center">
+      {/* <Menudiv>
+        <Menu1>
+          <Menu
+            mode="inline"
+            openKeys={openKeys}
+            onOpenChange={onOpenChange}
+            items={items}
+          />
+        </Menu1>
+        <Menu1>
+          <Menu
+            mode="inline"
+            openKeys={openKeys}
+            onOpenChange={onOpenChange}
+            items={items}
+          />
+        </Menu1>
+      </Menudiv> */}
+           
+
+        </Div41>
+    </Div2>
+
+
+  <div style={{display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", gap: 10}}>
+      <Divpricing>
+        PRICING
+      </Divpricing>
+      <Divpricingpp>
         Pricing for Metrix IQ
-      </p>
-      <p className="text-[#444] text-[18px] font-medium capitalize text-center leading-[30px] opacity-70">
+      </Divpricingpp>
+      <Divpricingp >
         Lorem ipsum dolor sit amet consectetur. Iaculis sed imperdiet viverra
-        iaculis morbi euismod ve
-        <br />
-        sollicitudin tortor. Sed vitae vulputate maecenas mollis massa integer
-        pretium sed. Sit in nulla
-        <br />
-        imperdiet tempor ipsum.
-      </p>
+        iaculis morbi euismod vel sollicitudin tortor. Sed vitae vulputate maecenas mollis massa integer
+        pretium sed. Sit in nulla imperdiet tempor ipsum.
+      </Divpricingp>
 
       <div>
         {" "}
@@ -989,26 +992,25 @@ export default function Home() {
           </div>
         </div>
       </div>
+      </div>
 
-      <div className="rounded-[10px] ml-[50px] mr-[50px] mt-[60px] bg-[#FFF] flex ">
+    <Divpp>
         <div>
-          <p className="text-[#1B1B1B] text-[38px] font-bold pt-[90px] pl-[40px] capitalize leading-[140%]">
+          <Pp>
             Lorem ipsum dolor sit
-            <br /> amet consectetur
-          </p>
-          <p className="text-[#1B1B1B] text-[18px] font-medium  pl-[40px] capitalize leading-[30px] opacity-70">
+             amet consectetur
+          </Pp>
+          <Ppp>
             Lorem ipsum dolor sit amet consectetur. Iaculis sed
-            <br /> imperdiet viverra iaculis morbi mollis massa integer pretium
-            <br />
+            imperdiet viverra iaculis morbi mollis massa integer pretium
             sed.Sit in nulla imperdiet tempor ipsum.
-          </p>
+          </Ppp>
         </div>
-        <div className="ml-[40px] mt-[20px] mb-[50px]">
+      <Divform>
           <Form>
-            {" "}
             {/* https://react-bootstrap.netlify.app/docs/forms/form-control */}
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <div className="flex mt-[60px] ">
+              <Formdiv>
                 <Form.Control
                   style={{
                     borderStyle: "none",
@@ -1018,18 +1020,18 @@ export default function Home() {
                   type="text"
                   placeholder="First Name"
                 />
-                <Form.Control
+               <Form.Control
                   type="text"
                   placeholder="Last Name"
                   style={{
                     borderStyle: "none",
                     backgroundColor: "#F5F5F5",
                     borderRadius: "12px",
-                    marginLeft: 30,
+                
                   }}
                 />
-              </div>
-              <div className="flex mt-[20px]">
+              </Formdiv>
+              <Formdiv1>
                 <Form.Control
                   type="email"
                   placeholder="E-mail"
@@ -1046,10 +1048,10 @@ export default function Home() {
                     borderStyle: "none",
                     backgroundColor: "#F5F5F5",
                     borderRadius: "12px",
-                    marginLeft: 30,
+                  
                   }}
                 />
-              </div>
+              </Formdiv1>
             </Form.Group>
             <Form.Group
               className="mb-3"
@@ -1067,62 +1069,65 @@ export default function Home() {
               />
             </Form.Group>
           </Form>
-          <button className="bg-[#5245A6] text-[white] rounded-[15px] border-none py-[8px] px-[170px]">
-            Get A CALL back
-          </button>
-        </div>
-      </div>
+          <Formbu>
+            Get A Call back
+          </Formbu>
+        </Divform>
+      </Divpp>
 
-      <div className="bg-[#5245A6] mt-[60px] flex pb-[20px]">
+</div>
+     
+
+      <Last>
         <div>
-          <img src={last} className="w-[227px] h-[49px] mt-[50px] ml-[50px]" />
-          <p className="text-[#FFF] text-[20px] font-semibold ml-[50px] mt-[20px]">
+          <img src={last} className="w-[227px] h-[49px] mt-[50px] " />
+          <Contact>
             CONTACT DETAILS :
-          </p>
-          <p className="text-[#FFF] text-[18px] font-medium ml-[50px] mt-[20px] ">
+          </Contact>
+          <p className="text-[#FFF] text-[18px] font-medium  mt-[20px] uppercase ">
             Phone: &emsp;
             <span className="font-normal">+044 2222 4444 </span>
           </p>
-          <p className="text-[#FFF] text-[18px] font-medium ml-[50px] mt-[20px]">
+          <p className="text-[#FFF] text-[18px] font-medium  mt-[20px] uppercase">
             Email: &emsp;
             <span className="font-normal">matrixIQ@thebox.com </span>
           </p>
         </div>
 
         <div>
-          <p className="text-[#FFF] text-[20px] font-semibold ml-[400px] mt-[50px]">
+          <News>
             Newsletter:
-          </p>
-          <input
+          </News>
+          <Input
             type="email"
             placeholder="Your email here"
-            className="outline-none border-none bg-[#F5F5F5] rounded-[64px] ml-[400px] py-[8px] px-[13px]"
+           
           />
           &emsp;
-          <button className="border-none bg-[#F5F5F5] rounded-[64px] py-[8px] px-[13px]">
+          <Button>
             Get Free Trial
-          </button>
-          <p className="text-[#FFF] text-[20px] font-semibold ml-[400px] mt-[50px]">
+          </Button>
+          <Social>
             Social:
-          </p>
+          </Social>
           <div className="flex">
-            <img src={facebook} className="w-[40px] h-[40px] ml-[400px]" />
+            <Icons src={facebook}/>
             &emsp;
             <img src={linkedin} className="w-[40px] h-[40px]" />
             &emsp;
             <img src={twitter} className="w-[40px] h-[40px] " />
           </div>
         </div>
-      </div>
+      </Last>
 
-      <div className="flex justify-between bg-[#6358AF] ">
-        <p className="text-[#FFF] text-[14px] font-normal leading-[22px] mt-[20px] ml-[50px]">
+      <Final>
+        <Lastp>
           ©2023. Metrics IQ. All Rights Reserved.
-        </p>
-        <p className="text-[#FFF] text-[14px] font-normal leading-[22px] mt-[20px] mr-[180px]">
+        </Lastp>
+        <Finalp >
           Privacy Policy Terms Of Service Cancellation & Refund Policy
-        </p>
-      </div>
+        </Finalp>
+      </Final>
     </>
   );
 }

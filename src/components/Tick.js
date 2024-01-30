@@ -1,7 +1,9 @@
 import React from "react";
+import { Tick0 } from "../styles/HomeStyles";
+import tick from '../assets/img/tick.png';
 
-export default function Tick({src}) {
+export default function Tick() {
   return (
-    <img src={src} style={{ width: "24px", height: "24px", marginTop: 18 }}/>
+    <Tick0 src={tick} />
   );
 }
