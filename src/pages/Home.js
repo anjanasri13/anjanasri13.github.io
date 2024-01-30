@@ -55,7 +55,7 @@ import { Box, Boxpara, Container, HeroBtn, HeroPara, HeroTitle, InnerContainer, 
   Time1, Time2, Time1p,Time2p,Time11p,Time22p, Rectangle, Rectangleimg,Rectanglep,Reactangle1p,Reactangle2p,
    Hline1,Tick1,Two1, Two1p, Two2p, Two3p, Hline2,Rectangle2,Reactangle2img,Reactangle3p, Reactangle4p,Time11,
    Time3p,Time4p,Time0,Img2,Img2p,Menuimg,Div1, Div1p,Div2p, Div1img, Div1img1,Test,Textp,Testblox,Menudiv,
-  Divpricing,Divservices,Divpricingp,Pp,Ppp,Divpp,Divform,Last,News,Input,Button,Social,Icons,Final,Finalp, Artimg, Zoo, Kon, Smart, Artp, Artimg1, Div2, Div2img, Two11p, Div3, Reactangle5p, Icon, Menu1, Wavesimg1, BoxT, One1C, Divp1, Divp2,Four0, Four1, Four2, Four3, Six, Cryimg, Sixbu, Flipline, Flipp, Six2, Flipbu, Noonimg, Noonline, Noonp, Cryline, Cryp, Noonbu, Crybu, Para2, Para3, Time1img, Div4, ResContent1, ResContent2, Tickp, Tickp1, Hline2div, Hline2div1, Hline2div1p, Hline2div1pp, Rectangle21, Rectangle22, Flex, Flexbu, Flexp, Containerdiv, Div41, Img4, Div5, DIv6p, Div6p, Div6pp, Div51, Menudiv1, Divpricingpp, Formdiv, Formdiv1, Formbu, Contact, Lastp, Smartp, Zoop,Konp, Span, Span1} from "../styles/HomeStyles";
+  Divpricing,Divservices,Divpricingp,Pp,Ppp,Divpp,Divform,Last,News,Input,Button,Social,Icons,Final,Finalp, Artimg, Zoo, Kon, Smart, Artp, Artimg1, Div2, Div2img, Two11p, Div3, Reactangle5p, Icon, Menu1, Wavesimg1, BoxT, One1C, Divp1, Divp2,Four0, Four1, Four2, Four3, Six, Cryimg, Sixbu, Flipline, Flipp, Six2, Flipbu, Noonimg, Noonline, Noonp, Cryline, Cryp, Noonbu, Crybu, Para2, Para3, Time1img, Div4, ResContent1, ResContent2, Tickp, Tickp1, Hline2div, Hline2div1, Hline2div1p, Hline2div1pp, Rectangle21, Rectangle22, Flex, Flexbu, Flexp, Containerdiv, Div41, Img4, Div5, DIv6p, Div6p, Div6pp, Div51, Menudiv1, Divpricingpp, Formdiv, Formdiv1, Formbu, Contact, Lastp, Smartp, Zoop,Konp, Span, Span1, Timediv} from "../styles/HomeStyles";
 import For from "../components/Four";
 import Menu from "../components/Menu";
 import Menu4 from "../components/Menu";
@@ -166,6 +166,22 @@ export default function Home() {
       title:"Lorem ipsum dolor sit amet consectetur.Cursus mauris nisi elementum adipiscing fringilla  nunc praesent. Lorem nunc dignissim maecenas nec at nulla.",
       title1:"Sara",
       title2:"Assistant Manager",
+      img1:ellipse2,
+    },
+    {
+     
+      img: vector2,
+      title:"Lorem ipsum dolor sit amet consectetur.Cursus mauris nisi elementum adipiscing fringilla  nunc praesent. Lorem nunc dignissim maecenas nec at nulla.",
+      title1:"Andriya",
+      title2:"General Reporter",
+      img1:ellipse2,
+    },
+    {
+     
+      img: vector2,
+      title:"Lorem ipsum dolor sit amet consectetur.Cursus mauris nisi elementum adipiscing fringilla  nunc praesent. Lorem nunc dignissim maecenas nec at nulla.",
+      title1:"Adam Zamba",
+      title2:"Manager",
       img1:ellipse2,
     },
   ]
@@ -522,7 +538,7 @@ export default function Home() {
         </One3p>
         <Hline/>
         <Time1>
-          <div>
+          <Timediv>
             <Time1img src={time} />
             <Time11p>
               Lorem&nbsp;Ipsum
@@ -531,8 +547,8 @@ export default function Home() {
               Lorem ipsum dolor sit amet consectetur. Iaculis sed viverra
                pretium sed.
             </Time1p>
-          </div>
-          <Time2>
+          </Timediv>
+          <Timediv>
             <img src={time} className="w-[64px] h-[64px]" />
             <Time22p>
               Lorem&nbsp;Ipsum
@@ -541,7 +557,7 @@ export default function Home() {
               Lorem ipsum dolor sit amet consectetur. Iaculis sed viverra
               pretium sed.
             </Time2p>
-          </Time2>
+          </Timediv>
         </Time1>
       </Div41>
       <div>
@@ -572,28 +588,39 @@ export default function Home() {
           </Reactangle2p>
           <Hline1/>
           <Tick1>
+            <div className="flex gap-5">
             <Tick/>
-      
             <Tickp>Lorem ipsum dolor sit</Tickp>
+            </div>
+            <div className="flex gap-5">
             <Tick/>
-           
             <Tickp1>Lorem ipsum dolor sit</Tickp1>
+            </div>
           </Tick1>
+           
           <Tick1>
-            <Tick src={tick} />
+          <div className="flex gap-5">
+            <Tick/>
          
             <Tickp>Lorem ipsum dolor sit</Tickp>
-            <Tick src={tick} />
+            </div>
+            <div className="flex gap-5">
+            <Tick/>
          
             <Tickp1>Lorem ipsum dolor sit</Tickp1>
+            </div>
           </Tick1>
           <Tick1>
-            <Tick src={tick} />
+          <div className="flex gap-5">
+            <Tick/>
            
             <Tickp>Lorem ipsum dolor sit</Tickp>
-            <Tick src={tick} />
+            </div>
+            <div className="flex gap-5">
+            <Tick />
           
             <Tickp1>Lorem ipsum dolor sit</Tickp1>
+            </div>
           </Tick1>
         </ResContent1>
       </Rectangle>
@@ -658,7 +685,7 @@ export default function Home() {
           </Reactangle5p>
 
           <Time0>
-            <div>
+            <Timediv>
               <img
                 src={time}
                 className="w-[64px] h-[64px] mb-[5px]"
@@ -670,8 +697,8 @@ export default function Home() {
                 Lorem ipsum dolor sit amet consectetur. Iaculis sed
                 viverra pretium sed.
               </Time3p>
-            </div>
-            <div>
+            </Timediv>
+            <Timediv>
               <Img2
                 src={time}/>
               <Img2p>
@@ -681,7 +708,7 @@ export default function Home() {
                 Lorem ipsum dolor sit amet consectetur. Iaculis sed 
                 viverra pretium sed.
               </Time4p>
-            </div>
+            </Timediv>
           </Time0>
         </Rectangle21>
       </Rectangle2>
@@ -1085,11 +1112,11 @@ export default function Home() {
             CONTACT DETAILS :
           </Contact>
           <p className="text-[#FFF] text-[18px] font-medium  mt-[20px] uppercase ">
-            Phone: &emsp;
+            Phone : &nbsp;
             <span className="font-normal">+044 2222 4444 </span>
           </p>
           <p className="text-[#FFF] text-[18px] font-medium  mt-[20px] uppercase">
-            Email: &emsp;
+            Email : &nbsp;
             <span className="font-normal">matrixIQ@thebox.com </span>
           </p>
         </div>
@@ -1113,9 +1140,9 @@ export default function Home() {
           <div className="flex">
             <Icons src={facebook}/>
             &emsp;
-            <img src={linkedin} className="w-[40px] h-[40px]" />
+            <Icons src={linkedin} />
             &emsp;
-            <img src={twitter} className="w-[40px] h-[40px] " />
+            <Icons src={twitter} />
           </div>
         </div>
       </Last>

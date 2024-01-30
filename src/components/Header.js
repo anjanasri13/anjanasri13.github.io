@@ -4,13 +4,13 @@ import User from "../assets/img/User.png";
 import { Link, NavLink } from "react-router-dom";
 import "@fontsource/raleway";
 import "../assets/css/Home.css";
-import { Contain, Nav, Navelements, Ul } from "../styles/HomeStyles";
+import { Contain, Nav, Navelements, Ul,Header1 } from "../styles/HomeStyles";
 
 export default function Header() {
 const [isActive, setIsActive] = useState(true);
 
   return (
-    <div className="flex items-center justify-between mt-[30px]">
+    <Header1>
      
       <div>
         <img src={Logo} className="w-[227px] h-[49px] ml-[35px]"></img>
@@ -63,6 +63,6 @@ const [isActive, setIsActive] = useState(true);
         </button>
       </div>
     
-    </div>
+    </Header1>
   );
 }
