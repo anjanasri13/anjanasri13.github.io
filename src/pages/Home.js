@@ -1083,7 +1083,7 @@ export default function Home() {
 
 </div>
      
-
+<footer>
       <Last>
         <div>
           <img src={last} className="w-[227px] h-[49px] mt-[50px] " />
@@ -1134,6 +1134,7 @@ export default function Home() {
           Privacy Policy Terms Of Service Cancellation & Refund Policy
         </Finalp>
       </Final>
+</footer>
     </>
   );
 }
